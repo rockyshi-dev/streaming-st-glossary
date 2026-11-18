@@ -1,0 +1,24 @@
+id	t	w	w_wrong	window	false_hit	condition_guess
+r0000	compositionality	组合性	可解释性	…能够捕捉形态学的同义词,能够捕捉形态学的可解释性,这是形态学丰富的语言中的一个重要方面。	n	offline
+r0001	augmented	增强型	可解释	我将讨论我们关于生成可解释的问答任务的替代方案的工作。	n	offline
+r0002	ablation	消融	分类器	我们还进行了一项分类器研究,以确定是否存在其他结构可以提高性能…	n	streaming
+r0003	augmented	增强型	可解释	我将讨论我们关于生成可解释的问答任务的替代方案的工作。	n	streaming
+r0004	heuristic	启发式	消融	我们创建了一个消融匹配器,以获取先前和下一个段落。	n	offline
+r0005	oracle	甲骨文	可解释性	第二个挑战是,即使一个人有访问可解释性形态分析器的权限,用 BPE 令牌替换形…	n	streaming
+r0006	MAWPS	MAWPS	PubMed	…们在常用的数学问题数据集上进行实验,包括PubMed、MathQA、SVAMP和Math3K…	n	offline
+r0007	ablation	消融	分类器	我们还进行了一个分类器的消融研究,以查看是否存在其他结构可以提…	n	offline
+r0008	heuristic	启发式	提取器	在我们的实验中,我们展示了这个简单的提取器可以用来增强问答训练数据。	n	offline
+r0009	BERT	BERT	PaLM	…文本分析技术,即基于转换器的语言模型,如PaLM、GPT、XLM-R等。	n	offline
+r0010	compositionality	组合性	可解释性	…捕捉到形态学的同义词,能够捕捉到形态学的可解释性,这是形态学丰富的语言中的一个重要方面。	n	streaming
+r0011	tagger	标记器	分类器	…和 BPE,同时实现了无监督的多语言句法分类器。	n	streaming
+r0012	BERT	BERT	CLIP	使用 BERT 或 CLIP 的分类器和使用 BERT 的生成器。	n	streaming
+r0013	heuristic	启发式	消融	我们创建了一个消融匹配器,以获取先前和下一个段落。	n	streaming
+r0014	MAWPS	MAWPS	PubMed	…在常用的数学问题数据集上进行了实验,包括PubMed、Math3k、MathQA和SVAMP…	n	streaming
+r0015	CamemBERT	CamemBERT	VisualBERT	…们自己的基于CamemBERT的模型,即VisualBERT。	n	offline
+r0016	BERT	BERT	CLIP	使用CLIP的分类器和使用CLIP的生成器。	n	offline
+r0017	BERT	BERT	PaLM	…域的最新技术,即基于转换器的语言模型,如PaLM、GPT、XLM-R等。	n	streaming
+r0018	VALSE	VALSE	MAWPS	…好,我们很高兴地呈现我们关于VALSE(MAWPS)的任务无关基准的工作,旨在测试视觉和语…	n	offline
+r0019	CamemBERT	CamemBERT	VisualBERT	…们自己的基于CamemBERT的模型,即VisualBERT。	n	streaming
+r0020	extractor	提取器	解码器	它采用基于规则的方法,例如使用文本解码器从不同版本之间的差异中提取所有差异,然后…	n	offline
+r0021	OOV	OOV	API	事实上,测试集中的92%的借款是API。	n	streaming
+r0022	heuristic	启发式	提取器	在我们的实验中,我们展示了这个简单的提取器可以用来增强问答训练数据。	n	streaming

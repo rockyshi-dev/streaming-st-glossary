@@ -1,0 +1,3 @@
+# (t, t') pairs rejected because w' is an acceptable translation of t.
+# Read on 2026-11-17 over all 115 (t, t') pairs of the seed-20261117 draw: none rejected.
+# Format: t<TAB>t'<TAB>reason
