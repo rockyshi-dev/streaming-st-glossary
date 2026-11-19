@@ -248,6 +248,16 @@ python3 -m fleurs.early_probe --stream runs/fleurs/stream.jsonl --align runs/fle
     --sentences runs/fleurs/items/sentences.jsonl
 ```
 
+The term extraction is greedy decoding on vLLM, and it is not bit-reproducible: a second run on the same GPU type,
+model revision and vLLM version gave a different term list on 64 of the 820 lines, so it builds a different set of
+items. To decode exactly the published items, start from the published terms; `items` then rebuilds
+`data/fleurs/sentences.jsonl` byte for byte and the terms stage is skipped:
+
+```bash
+mkdir -p runs/fleurs && cp data/fleurs/terms_raw.jsonl runs/fleurs/
+bash fleurs/run.sh all runs/fleurs 0
+```
+
 Each stage can also be run alone (`bash fleurs/run.sh STAGE runs/fleurs [GPU]`); a stage whose output exists is
 skipped, and the streaming decode resumes. Compare a new decode with
 `python -m stglossary.stream compare --new runs/fleurs/stream.jsonl --ref data/fleurs/stream.jsonl --out cmp.json`.
