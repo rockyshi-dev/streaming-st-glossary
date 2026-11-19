@@ -211,6 +211,14 @@ python3 -m fleurs.early_probe --stream data/fleurs/stream.jsonl --align data/fle
 python3 tests/test_fleurs.py
 ```
 
+To rebuild the items from the stored FLoRes lines and glossary terms (about a minute on CPU), and check them:
+
+```bash
+python3 -m fleurs.items --lines data/fleurs/lines.jsonl --terms data/fleurs/terms_raw.jsonl \
+    --out items-rebuilt --min-dur 8.0 > /dev/null
+cmp items-rebuilt/sentences.jsonl data/fleurs/sentences.jsonl && echo identical
+```
+
 Expected output (each takes a few seconds):
 
 ```

@@ -35,14 +35,15 @@ The stage names are those of `fleurs/run.sh`; the commands are the ones it runs.
 
 | File | Rows | Written by |
 |---|---|---|
+| `lines.jsonl` | 820 | `prep`: `python -m fleurs.prep --corpus FLEURS --out OUT/prep` |
 | `terms_raw.jsonl` | 820 (one per FLoRes line of a kept article) | `terms`: `python -m fleurs.terms --lines OUT/prep/lines.jsonl --model Qwen2.5-7B-Instruct --out terms_raw.jsonl` |
 | `sentences.jsonl` | 234 sentences, 225 decision items (`first: true`) from 161 articles | `items`: `python -m fleurs.items --lines OUT/prep/lines.jsonl --terms terms_raw.jsonl --out OUT/items --min-dur 8.0` |
 | `align.jsonl` | 225 | `align`: `python -m stglossary.align --sentences sentences.jsonl --corpus FLEURS --subset first --model faster-whisper-large-v3 --out align.jsonl` |
 | `stream.jsonl` | 675 = 225 items x 3 arms (correct, irrelevant, wrong) | `stream`: `python -m fleurs.stream3 decode --mode speech --family omni25 --model Qwen2.5-Omni-7B --sentences sentences.jsonl --corpus FLEURS --align align.jsonl --chunk 1.0 --prompt instructed --subset first --out stream.jsonl` |
 | `scan.json` | 111 examples | `scan`: `python -m fleurs.scan --stream stream.jsonl --align align.jsonl --sentences sentences.jsonl --out scan.json` |
 
-`prep` (`python -m fleurs.prep --corpus FLEURS --out OUT/prep`) reads only the corpus, so its output is not stored
-here; it is rebuilt from the corpus in seconds.
+`lines.jsonl` (820 rows, one per FLoRes line of a kept article) is the output of `prep` (`python -m fleurs.prep
+--corpus FLEURS --out OUT/prep`), stored so that `items` can be rebuilt without the corpus; it is unchanged.
 
 `terms_raw.jsonl`, `align.jsonl` and `stream.jsonl` were passed through `stglossary/export.py` (`python -m
 stglossary.export jsonl SRC DST --model ID@REVISION`), which removes the `commit` field and replaces the local model
