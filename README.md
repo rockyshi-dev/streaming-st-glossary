@@ -154,6 +154,98 @@ python3 tests/test_contrast.py    # coding files, counts, decision rows, latency
 The early-stop count without the hold-back is recounted from the published per-step texts
 (`data/streaming-before-holdback.jsonl`); the decoder in this repository always holds the sentence-final mark back.
 
+## FLEURS example
+
+The post's example of a sentence written from the glossary comes from ACL 60/60 (dev/147, `wrong` arm): after about
+seven words of audio, the model wrote a whole sentence out of glossary entries, repeated it at the next step, and
+LA-2 committed it. `fleurs/` looks for the same thing in real outputs on everyday read speech: FLEURS `en_us`
+(read Wikipedia sentences from FLoRes-200), with the same model, streaming policy, prompt and glossary arms. It is a
+search for examples, not a rate estimate: no decision depends on how many are found. The rule was fixed before
+anything was decoded.
+
+### Search criterion
+
+An output (one sentence, one arm) is an **example** when one committed step adds the glossary Chinese forms of at
+least 2 distinct terms whose English term has not yet been spoken by that step's end, and that committed text
+survives into the final output.
+
+- The glossary is the block of the output's own arm.
+- A step adds a form when the form occurs more often in the committed text after the step than before it
+  (`stglossary.coding.spans`). Entries sharing one form count once.
+- Not yet spoken: the forced-alignment end time of the term's first occurrence in the sentence is later than the
+  step's audio end, or the term does not occur in the sentence.
+- Survives: the final output starts with that step's committed text.
+- Reported for each example: whether w' (the wrong arm's form of the probe term t) is among the early forms, and
+  whether the step adds w' at all.
+
+Details of the implementation: a block's English term counts as spoken when the sentence holds it or a spelling with
+the same lemma (`stglossary.coding.lemma`); at the last step (the whole audio) every term in the sentence counts as
+spoken, since alignment ends may exceed the duration by 0.05 s; a form nested inside another form added at the same
+step counts once. On the ACL 60/60 streaming outputs of this repository the criterion flags dev/147 and dev/110 in
+the `wrong` arm (`tests/test_fleurs.py`).
+
+### Items
+
+- Data: FLEURS `en_us` dev and test, matched to FLoRes-200 devtest by English text (every match is unique). One
+  FLoRes article is one "talk". Articles about language technology, speech or computing are dropped (a pattern on
+  topic and title, and a list of 8 titles in `fleurs/prep.py`): 222 articles are kept.
+- Terms: Qwen2.5-7B-Instruct reads each English line with its FLoRes Chinese line and lists glossary terms, with the
+  Chinese form copied from the translation and a class (`fleurs/terms.py`; raw outputs kept untouched in
+  `data/fleurs/terms_raw.jsonl`).
+- Items (`fleurs/items.py`, after `stglossary/build_items.py`): one glossary block per article, an item is
+  (article, term) from a recorded sentence of 8-30 s, and w' (`wrong`, same class) and w'' (`irrelevant`, another
+  class) are drawn from other articles. 225 items from 161 articles.
+
+Differences from the ACL 60/60 items: terms and classes come from an LLM, not from the corpus terminology and hand
+labels (no part-of-speech check, no hand pair-reject list); a block holds every specific term of the article's
+FLoRes lines; sentences of 8-30 s only, one recording per sentence; the reference is FLoRes `zho_Hans`; arms
+correct, irrelevant and wrong only (no `none` repeats).
+
+### Recount from the published outputs (CPU)
+
+```bash
+python3 -m fleurs.scan --stream data/fleurs/stream.jsonl --align data/fleurs/align.jsonl \
+    --sentences data/fleurs/sentences.jsonl --out scan.json | sed -n 1p
+python3 -m fleurs.early_probe --stream data/fleurs/stream.jsonl --align data/fleurs/align.jsonl \
+    --sentences data/fleurs/sentences.jsonl | sed -n 1,2p
+python3 tests/test_fleurs.py
+```
+
+Expected output (each takes a few seconds):
+
+```
+scanned {'correct': 225, 'irrelevant': 225, 'wrong': 225}; not aligned 0; examples per arm {'correct': 42, 'wrong': 37, 'irrelevant': 32}
+correct {'n': 225, 'final': 198, 'committed': 198, 'early': 34}
+wrong {'n': 225, 'final': 44, 'committed': 44, 'early': 6}
+3 tests passed
+```
+
+`scan` prints every example after its first line and writes them with their steps to `scan.json` (the published
+copy is `data/fleurs/scan.json`). `early_probe` counts, per arm, the outputs whose final text holds the arm's form of
+t (w in `correct`, w' in `wrong`), and how many committed it before t was spoken; it is description, not part of the
+criterion.
+
+### Run again (one 24 GB GPU)
+
+Requirements as in Step 2, without Qwen2-Audio. The whole pipeline took about 55 minutes on one RTX 4090; most of it
+is the streaming decode.
+
+```bash
+bash fleurs/fetch_fleurs.sh corpus/fleurs        # 488 MB; checks every file's sha256, extracts, writes SOURCE.json
+export MODELS=/path/to/models                    # Qwen2.5-7B-Instruct, faster-whisper-large-v3, Qwen2.5-Omni-7B (Step 2)
+export PYTHON_VLLM=/path/to/vllm-env/bin/python  # optional: interpreters of separate environments
+export PYTHON_WHISPER=/path/to/whisper-env/bin/python
+bash fleurs/run.sh all runs/fleurs 0             # stages prep, terms, items, align, stream, scan; GPU 0
+python3 -m fleurs.early_probe --stream runs/fleurs/stream.jsonl --align runs/fleurs/align.jsonl \
+    --sentences runs/fleurs/items/sentences.jsonl
+```
+
+Each stage can also be run alone (`bash fleurs/run.sh STAGE runs/fleurs [GPU]`); a stage whose output exists is
+skipped, and the streaming decode resumes. Compare a new decode with
+`python -m stglossary.stream compare --new runs/fleurs/stream.jsonl --ref data/fleurs/stream.jsonl --out cmp.json`.
+The term extraction runs once over all lines and is not resumable. Greedy decoding on another GPU or library version
+can change a few outputs, so a re-run may find a slightly different set of examples.
+
 ## Layout
 
 ```
@@ -175,8 +267,16 @@ stglossary/
   power.py        simulated power of the decision rule
   export.py       how data/ was made from the decoder outputs
   prov.py         git provenance of each decoded row
+fleurs/
+  fetch_fleurs.sh the FLEURS and FLoRes-200 files, checked by sha256
+  run.sh          every stage of the FLEURS example
+  prep.py, terms.py, items.py   FLEURS joined to FLoRes-200; glossary terms; items and the three arms
+  stream3.py      stglossary.stream with the arms correct, irrelevant, wrong
+  scan.py         the search criterion
+  early_probe.py  early commits of the probe form per arm
 tests/
 data/             item table, decodes, hand codes; see data/SOURCE.md
+data/fleurs/      the FLEURS example's items, terms, alignment, decodes and scan; see data/fleurs/SOURCE.md
 ```
 
 ## Licences
@@ -184,3 +284,5 @@ data/             item table, decodes, hand codes; see data/SOURCE.md
 - Code: MIT (`LICENSE`).
 - Data (`data/`): derived from ACL 60/60 (Salesky et al., IWSLT 2023), CC BY 4.0; see `data/SOURCE.md` for the
   sources and the attribution.
+- FLEURS example (`data/fleurs/`): derived from FLoRes-200 (CC BY-SA 4.0) and FLEURS (CC BY 4.0), shared under
+  CC BY-SA 4.0; see `data/fleurs/SOURCE.md`.

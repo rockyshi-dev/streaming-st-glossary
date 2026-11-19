@@ -1,0 +1,6301 @@
+{
+ "stream": "data/fleurs/stream.jsonl",
+ "stream_sha256": "16b35cfe5944fe89a00d8972838fdee8b63248720d9597f152eebd28080acc6a",
+ "align_sha256": "9b34ae7d6f518228e1c25be8ac19d17f1783842c3985abc0efc010a43613d9ea",
+ "sentences_sha256": "886ddd06209c344fd5b8c911615440645f9ab8a58c06eef7831fa57d57349156",
+ "outputs_scanned": {
+  "correct": 225,
+  "irrelevant": 225,
+  "wrong": 225
+ },
+ "unaligned": [],
+ "examples_per_arm": {
+  "correct": 42,
+  "wrong": 37,
+  "irrelevant": 32
+ },
+ "examples": [
+  {
+   "key": "test/1788|correct|0",
+   "sid": "test/1788",
+   "arm": "correct",
+   "talk": "wikinews:USA Gymnastics board resigning after sex abuse",
+   "t": "USA Gymnastics",
+   "w": "美国体操协会",
+   "w_wrong": "加州公路巡警",
+   "en": "USA Gymnastics supports the United States Olympic Committee's letter and accepts the absolute need of the Olympic family to promote a safe environment for all of our athletes.",
+   "duration": 15.6,
+   "final": "美国体操协会支持美国奥委会，以确保运动员在一个安全、积极和充满支持的环境中茁壮成长。",
+   "steps": [
+    {
+     "step_end": 4.0,
+     "committed_before": "美国体操协会",
+     "committed_after": "美国体操协会支持美国奥委会，以确保运动员在一个安全、积极和充满支持的环境中",
+     "added": "支持美国奥委会，以确保运动员在一个安全、积极和充满支持的环境中",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "United States Olympic Committee",
+       "form": "美国奥委会",
+       "spoken_end": 5.3,
+       "probe": false
+      },
+      {
+       "en": "USOC",
+       "form": "美国奥委会",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "athletes",
+       "form": "运动员",
+       "spoken_end": 13.62,
+       "probe": false
+      },
+      {
+       "en": "safe, positive and empowered environment",
+       "form": "安全、积极和充满支持的环境",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1788|wrong|0",
+   "sid": "test/1788",
+   "arm": "wrong",
+   "talk": "wikinews:USA Gymnastics board resigning after sex abuse",
+   "t": "USA Gymnastics",
+   "w": "美国体操协会",
+   "w_wrong": "加州公路巡警",
+   "en": "USA Gymnastics supports the United States Olympic Committee's letter and accepts the absolute need of the Olympic family to promote a safe environment for all of our athletes.",
+   "duration": 15.6,
+   "final": "美国体操协会支持美国奥林匹克委员会，以确保运动员在一个安全、积极和充满支持的环境中茁壮成长。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "美国体操协会支持美国奥林匹克委员会，",
+     "committed_after": "美国体操协会支持美国奥林匹克委员会，以确保运动员在一个安全、积极和充满支持的环境中茁壮成长",
+     "added": "以确保运动员在一个安全、积极和充满支持的环境中茁壮成长",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "athletes",
+       "form": "运动员",
+       "spoken_end": 13.62,
+       "probe": false
+      },
+      {
+       "en": "safe, positive and empowered environment",
+       "form": "安全、积极和充满支持的环境",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1604|correct|0",
+   "sid": "dev/1604",
+   "arm": "correct",
+   "talk": "wikinews:Former U.S. National Security Advisor Zbigniew Brzezinski dies aged 89",
+   "t": "NSA",
+   "w": "国家安全顾问",
+   "w_wrong": "联邦调查局",
+   "en": "As NSA, he assisted Carter in diplomatically handling world affairs, such as the Camp David Accords, 1978; normalizing US–China relations thought the late 1970s; the Iranian Revolution, which led to the Iran hostage crisis, 1979; and the Soviet invasion in Afghanistan, 1979.",
+   "duration": 29.1,
+   "final": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府中担任国家安全顾问，帮助卡特处理外交事务，如1978年的《戴维营协议》、改善美中关系以及应对伊朗革命和伊朗人质危机。他还协助亨利·基辛格处理苏联入侵阿富汗的问题。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府",
+     "added": "布热津斯基在约翰·福特·肯尼迪政府",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Brzezinski",
+       "form": "布热津斯基",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "John F. Kennedy",
+       "form": "约翰·福特·肯尼迪",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "administration",
+       "form": "政府",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 5.0,
+     "committed_before": "布热津斯基在约翰·福特·肯尼迪政府",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府",
+     "added": "和林登·贝恩斯·约翰逊政府",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Lyndon B. Johnson",
+       "form": "林登·贝恩斯·约翰逊",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "administration",
+       "form": "政府",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 14.0,
+     "committed_before": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府中担任国家安全顾问，帮助卡特处理外交事务，如1978年的《戴维营协议》、",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府中担任国家安全顾问，帮助卡特处理外交事务，如1978年的《戴维营协议》、改善美中关系以及应对伊朗革命和伊朗人质危机。他还协助亨利·基辛格处理苏联入侵阿富汗的问题",
+     "added": "改善美中关系以及应对伊朗革命和伊朗人质危机。他还协助亨利·基辛格处理苏联入侵阿富汗的问题",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "Henry Kissinger",
+       "form": "亨利·基辛格",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Iranian Revolution",
+       "form": "伊朗革命",
+       "spoken_end": 16.86,
+       "probe": false
+      },
+      {
+       "en": "Iran hostage crisis",
+       "form": "伊朗人质危机",
+       "spoken_end": 19.7,
+       "probe": false
+      },
+      {
+       "en": "Soviet invasion in Afghanistan",
+       "form": "苏联入侵阿富汗",
+       "spoken_end": 24.42,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1604|irrelevant|0",
+   "sid": "dev/1604",
+   "arm": "irrelevant",
+   "talk": "wikinews:Former U.S. National Security Advisor Zbigniew Brzezinski dies aged 89",
+   "t": "NSA",
+   "w": "国家安全顾问",
+   "w_wrong": "联邦调查局",
+   "en": "As NSA, he assisted Carter in diplomatically handling world affairs, such as the Camp David Accords, 1978; normalizing US–China relations thought the late 1970s; the Iranian Revolution, which led to the Iran hostage crisis, 1979; and the Soviet invasion in Afghanistan, 1979.",
+   "duration": 29.1,
+   "final": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府中担任国家安全顾问，帮助卡特处理世界事务，如《戴维营协议》、伊朗革命、伊朗人质危机和苏联入侵阿富汗。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府",
+     "added": "布热津斯基在约翰·福特·肯尼迪政府",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Brzezinski",
+       "form": "布热津斯基",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "John F. Kennedy",
+       "form": "约翰·福特·肯尼迪",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "administration",
+       "form": "政府",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 5.0,
+     "committed_before": "布热津斯基在约翰·福特·肯尼迪政府",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府",
+     "added": "和林登·贝恩斯·约翰逊政府",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Lyndon B. Johnson",
+       "form": "林登·贝恩斯·约翰逊",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "administration",
+       "form": "政府",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 11.0,
+     "committed_before": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府中担任国家安全顾问，帮助卡特处理世界事务，如《戴维营协议》、",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府中担任国家安全顾问，帮助卡特处理世界事务，如《戴维营协议》、伊朗革命、伊朗人质危机和苏联入侵阿富汗",
+     "added": "伊朗革命、伊朗人质危机和苏联入侵阿富汗",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Iranian Revolution",
+       "form": "伊朗革命",
+       "spoken_end": 16.86,
+       "probe": false
+      },
+      {
+       "en": "Iran hostage crisis",
+       "form": "伊朗人质危机",
+       "spoken_end": 19.7,
+       "probe": false
+      },
+      {
+       "en": "Soviet invasion in Afghanistan",
+       "form": "苏联入侵阿富汗",
+       "spoken_end": 24.42,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1604|wrong|0",
+   "sid": "dev/1604",
+   "arm": "wrong",
+   "talk": "wikinews:Former U.S. National Security Advisor Zbigniew Brzezinski dies aged 89",
+   "t": "NSA",
+   "w": "国家安全顾问",
+   "w_wrong": "联邦调查局",
+   "en": "As NSA, he assisted Carter in diplomatically handling world affairs, such as the Camp David Accords, 1978; normalizing US–China relations thought the late 1970s; the Iranian Revolution, which led to the Iran hostage crisis, 1979; and the Soviet invasion in Afghanistan, 1979.",
+   "duration": 29.1,
+   "final": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府担任国家安全顾问，帮助卡特处理外交事务，如《戴维营协议》、伊朗革命、伊朗人质危机和苏联入侵阿富汗。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府",
+     "added": "布热津斯基在约翰·福特·肯尼迪政府",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Brzezinski",
+       "form": "布热津斯基",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "John F. Kennedy",
+       "form": "约翰·福特·肯尼迪",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "administration",
+       "form": "政府",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 5.0,
+     "committed_before": "布热津斯基在约翰·福特·肯尼迪政府",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府担任国家安全顾问，",
+     "added": "和林登·贝恩斯·约翰逊政府担任国家安全顾问，",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Lyndon B. Johnson",
+       "form": "林登·贝恩斯·约翰逊",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "administration",
+       "form": "政府",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 9.0,
+     "committed_before": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府担任国家安全顾问，帮助卡特处理",
+     "committed_after": "布热津斯基在约翰·福特·肯尼迪政府和林登·贝恩斯·约翰逊政府担任国家安全顾问，帮助卡特处理外交事务，如《戴维营协议》、伊朗革命、伊朗人质危机和苏联入侵阿富汗",
+     "added": "外交事务，如《戴维营协议》、伊朗革命、伊朗人质危机和苏联入侵阿富汗",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Iranian Revolution",
+       "form": "伊朗革命",
+       "spoken_end": 16.86,
+       "probe": false
+      },
+      {
+       "en": "Iran hostage crisis",
+       "form": "伊朗人质危机",
+       "spoken_end": 19.7,
+       "probe": false
+      },
+      {
+       "en": "Soviet invasion in Afghanistan",
+       "form": "苏联入侵阿富汗",
+       "spoken_end": 24.42,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1789|correct|0",
+   "sid": "test/1789",
+   "arm": "correct",
+   "talk": "wikinews:La La Land receives record-equalling fourteen Oscar nominations; Hacksaw Ridge gets six",
+   "t": "Best Picture",
+   "w": "最佳影片",
+   "w_wrong": "脑炎疫苗",
+   "en": "The other nominations include Best Picture, Director, Cinematography, Costume Design, Film-editing, Original Score, Production Design, Sound Editing, Sound Mixing and Original Screenplay.",
+   "duration": 12.6,
+   "final": "其他提名包括最佳影片、最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "其他提名包括最佳影片、",
+     "committed_after": "其他提名包括最佳影片、最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本",
+     "added": "最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Costume Design",
+       "form": "最佳服装设计",
+       "spoken_end": 5.06,
+       "probe": false
+      },
+      {
+       "en": "Film-editing",
+       "form": "最佳电影剪辑",
+       "spoken_end": 5.98,
+       "probe": false
+      },
+      {
+       "en": "Original Score",
+       "form": "最佳原创配乐",
+       "spoken_end": 6.82,
+       "probe": false
+      },
+      {
+       "en": "Production Design",
+       "form": "最佳艺术指导",
+       "spoken_end": 7.88,
+       "probe": false
+      },
+      {
+       "en": "Sound Editing",
+       "form": "最佳音效剪辑",
+       "spoken_end": 8.94,
+       "probe": false
+      },
+      {
+       "en": "Sound Mixing",
+       "form": "最佳混音",
+       "spoken_end": 9.92,
+       "probe": false
+      },
+      {
+       "en": "Original Screenplay",
+       "form": "最佳原创剧本",
+       "spoken_end": 11.04,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1789|irrelevant|0",
+   "sid": "test/1789",
+   "arm": "irrelevant",
+   "talk": "wikinews:La La Land receives record-equalling fourteen Oscar nominations; Hacksaw Ridge gets six",
+   "t": "Best Picture",
+   "w": "最佳影片",
+   "w_wrong": "脑炎疫苗",
+   "en": "The other nominations include Best Picture, Director, Cinematography, Costume Design, Film-editing, Original Score, Production Design, Sound Editing, Sound Mixing and Original Screenplay.",
+   "duration": 12.6,
+   "final": "其他提名包括最佳影片、最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "其他提名包括最佳影片、",
+     "committed_after": "其他提名包括最佳影片、最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本",
+     "added": "最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Costume Design",
+       "form": "最佳服装设计",
+       "spoken_end": 5.06,
+       "probe": false
+      },
+      {
+       "en": "Film-editing",
+       "form": "最佳电影剪辑",
+       "spoken_end": 5.98,
+       "probe": false
+      },
+      {
+       "en": "Original Score",
+       "form": "最佳原创配乐",
+       "spoken_end": 6.82,
+       "probe": false
+      },
+      {
+       "en": "Production Design",
+       "form": "最佳艺术指导",
+       "spoken_end": 7.88,
+       "probe": false
+      },
+      {
+       "en": "Sound Editing",
+       "form": "最佳音效剪辑",
+       "spoken_end": 8.94,
+       "probe": false
+      },
+      {
+       "en": "Sound Mixing",
+       "form": "最佳混音",
+       "spoken_end": 9.92,
+       "probe": false
+      },
+      {
+       "en": "Original Screenplay",
+       "form": "最佳原创剧本",
+       "spoken_end": 11.04,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1789|wrong|0",
+   "sid": "test/1789",
+   "arm": "wrong",
+   "talk": "wikinews:La La Land receives record-equalling fourteen Oscar nominations; Hacksaw Ridge gets six",
+   "t": "Best Picture",
+   "w": "最佳影片",
+   "w_wrong": "脑炎疫苗",
+   "en": "The other nominations include Best Picture, Director, Cinematography, Costume Design, Film-editing, Original Score, Production Design, Sound Editing, Sound Mixing and Original Screenplay.",
+   "duration": 12.6,
+   "final": "其他提名包括最佳影片、最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "其他提名包括最佳影片、",
+     "committed_after": "其他提名包括最佳影片、最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本",
+     "added": "最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音、最佳原创剧本",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Costume Design",
+       "form": "最佳服装设计",
+       "spoken_end": 5.06,
+       "probe": false
+      },
+      {
+       "en": "Film-editing",
+       "form": "最佳电影剪辑",
+       "spoken_end": 5.98,
+       "probe": false
+      },
+      {
+       "en": "Original Score",
+       "form": "最佳原创配乐",
+       "spoken_end": 6.82,
+       "probe": false
+      },
+      {
+       "en": "Production Design",
+       "form": "最佳艺术指导",
+       "spoken_end": 7.88,
+       "probe": false
+      },
+      {
+       "en": "Sound Editing",
+       "form": "最佳音效剪辑",
+       "spoken_end": 8.94,
+       "probe": false
+      },
+      {
+       "en": "Sound Mixing",
+       "form": "最佳混音",
+       "spoken_end": 9.92,
+       "probe": false
+      },
+      {
+       "en": "Original Screenplay",
+       "form": "最佳原创剧本",
+       "spoken_end": 11.04,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1756|correct|0",
+   "sid": "test/1756",
+   "arm": "correct",
+   "talk": "wikinews:US President Trump announces troop withdrawal from Syria",
+   "t": "United States President",
+   "w": "美国总统",
+   "w_wrong": "胡锦涛",
+   "en": "Late on Sunday, the United States President Donald Trump, in a statement delivered via the press secretary, announced US troops would be leaving Syria.",
+   "duration": 9.96,
+   "final": "周日晚些时候，美国总统唐纳德·特朗普通过电话与土耳其总统进行了通话，并在声明中宣布美军将离开叙利亚。",
+   "steps": [
+    {
+     "step_end": 4.0,
+     "committed_before": "周",
+     "committed_after": "周日晚些时候，美国总统唐纳德·特朗普通过电话与土耳其总统进行了通话",
+     "added": "日晚些时候，美国总统唐纳德·特朗普通过电话与土耳其总统进行了通话",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "phone conversation",
+       "form": "通话",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Turkish President",
+       "form": "土耳其总统",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1779|correct|0",
+   "sid": "test/1779",
+   "arm": "correct",
+   "talk": "wikinews:US President Trump announces troop withdrawal from Syria",
+   "t": "announcement",
+   "w": "声明",
+   "w_wrong": "坟墓",
+   "en": "The announcement was made after Trump had a phone conversation with Turkish President Recep Tayyip Erdoğan.",
+   "duration": 10.8,
+   "final": "特朗普总统在电话中宣布，土耳其总统将派遣军队进入叙利亚，以打击伊斯兰国武装分子。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "特朗普总统在电话中宣布，土耳其总统将派遣",
+     "added": "特朗普总统在电话中宣布，土耳其总统将派遣",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Trump",
+       "form": "特朗普",
+       "spoken_end": 2.92,
+       "probe": false
+      },
+      {
+       "en": "Turkish President",
+       "form": "土耳其总统",
+       "spoken_end": 6.68,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 4.0,
+     "committed_before": "特朗普总统在电话中宣布，土耳其总统将派遣",
+     "committed_after": "特朗普总统在电话中宣布，土耳其总统将派遣军队进入叙利亚，以打击伊斯兰国",
+     "added": "军队进入叙利亚，以打击伊斯兰国",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Syria",
+       "form": "叙利亚",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "ISIS",
+       "form": "伊斯兰国",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1779|wrong|0",
+   "sid": "test/1779",
+   "arm": "wrong",
+   "talk": "wikinews:US President Trump announces troop withdrawal from Syria",
+   "t": "announcement",
+   "w": "声明",
+   "w_wrong": "坟墓",
+   "en": "The announcement was made after Trump had a phone conversation with Turkish President Recep Tayyip Erdoğan.",
+   "duration": 10.8,
+   "final": "特朗普总统在电话中宣布，土耳其总统将派遣军队进入叙利亚，以打击伊斯兰国武装分子。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "特朗普总统在电话中宣布，土耳其总统将派遣",
+     "added": "特朗普总统在电话中宣布，土耳其总统将派遣",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Trump",
+       "form": "特朗普",
+       "spoken_end": 2.92,
+       "probe": false
+      },
+      {
+       "en": "Turkish President",
+       "form": "土耳其总统",
+       "spoken_end": 6.68,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 4.0,
+     "committed_before": "特朗普总统在电话中宣布，土耳其总统将派遣",
+     "committed_after": "特朗普总统在电话中宣布，土耳其总统将派遣军队进入叙利亚，以打击伊斯兰国武装分子",
+     "added": "军队进入叙利亚，以打击伊斯兰国武装分子",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Syria",
+       "form": "叙利亚",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "ISIS",
+       "form": "伊斯兰国",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "fighters",
+       "form": "武装分子",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1579|irrelevant|0",
+   "sid": "dev/1579",
+   "arm": "irrelevant",
+   "talk": "wikinews:Iraq Study Group Report: Iraq could be on a slide towards chaos",
+   "t": "sectarian warfare",
+   "w": "宗派战争",
+   "w_wrong": "地方菜系",
+   "en": "It warns No one can guarantee that any course of action in Iraq at this point will stop sectarian warfare, growing violence, or a slide toward chaos.",
+   "duration": 10.2,
+   "final": "它警告说，没有人能保证伊拉克目前的任何行动会阻止暴力和混乱的加剧，或者防止其滑向混乱。",
+   "steps": [
+    {
+     "step_end": 6.0,
+     "committed_before": "它警告说，没有人能保证伊拉克",
+     "committed_after": "它警告说，没有人能保证伊拉克目前的任何行动会阻止暴力和混乱",
+     "added": "目前的任何行动会阻止暴力和混乱",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "violence",
+       "form": "暴力",
+       "spoken_end": 7.2,
+       "probe": false
+      },
+      {
+       "en": "chaos",
+       "form": "混乱",
+       "spoken_end": 8.78,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1877|irrelevant|0",
+   "sid": "test/1877",
+   "arm": "irrelevant",
+   "talk": "wikinews:Argentina's first lady launches presidential bid",
+   "t": "presidential candidacy",
+   "w": "总统竞选资格",
+   "w_wrong": "夏季奥运会",
+   "en": "Current senator and Argentine First Lady Cristina Fernandez de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometers (31 miles) away from Buenos Aires.",
+   "duration": 19.56,
+   "final": "现任参议员和阿根廷第一夫人克里斯蒂娜·费尔南德斯·德基什内尔宣布她将竞选总统。昨天晚上，她在拉普拉塔市宣布了她的总统竞选。拉普拉塔市位于布宜诺斯艾利斯省，距离布宜诺斯艾利斯市约50公里（31英里）。",
+   "steps": [
+    {
+     "step_end": 15.0,
+     "committed_before": "现任参议员和阿根廷第一夫人克里斯蒂娜·费尔南德斯·德基什内尔宣布她将竞选总统。昨天晚上，她在拉普拉塔市宣布了她的总统竞选",
+     "committed_after": "现任参议员和阿根廷第一夫人克里斯蒂娜·费尔南德斯·德基什内尔宣布她将竞选总统。昨天晚上，她在拉普拉塔市宣布了她的总统竞选。拉普拉塔市位于布宜诺斯艾利斯省，距离布宜诺斯艾利斯市约50公里",
+     "added": "。拉普拉塔市位于布宜诺斯艾利斯省，距离布宜诺斯艾利斯市约50公里",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Buenos Aires",
+       "form": "布宜诺斯艾利斯",
+       "spoken_end": 17.36,
+       "probe": false
+      },
+      {
+       "en": "Buenos Aires province",
+       "form": "布宜诺斯艾利斯省",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1764|correct|0",
+   "sid": "test/1764",
+   "arm": "correct",
+   "talk": "wikinews:Funeral of Pope John Paul II takes place",
+   "t": "St. Peter's Square",
+   "w": "圣彼得广场",
+   "w_wrong": "尼拉贡戈火山",
+   "en": "The number of people present was so large that it was not possible for everybody to gain access to the funeral in St. Peter's Square.",
+   "duration": 9.66,
+   "final": "罗马的葬礼人数如此之多，以至于不可能让每个人都能进入圣彼得广场参加葬礼。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "罗马的葬礼",
+     "added": "罗马的葬礼",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Rome",
+       "form": "罗马",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "funeral",
+       "form": "葬礼",
+       "spoken_end": 6.24,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1764|irrelevant|0",
+   "sid": "test/1764",
+   "arm": "irrelevant",
+   "talk": "wikinews:Funeral of Pope John Paul II takes place",
+   "t": "St. Peter's Square",
+   "w": "圣彼得广场",
+   "w_wrong": "尼拉贡戈火山",
+   "en": "The number of people present was so large that it was not possible for everybody to gain access to the funeral in St. Peter's Square.",
+   "duration": 9.66,
+   "final": "罗马是联合国成员国，葬礼上在场的人数如此之多，以至于不可能让每个人都能进入圣彼得广场参加葬礼。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "罗马是联合国成员国",
+     "added": "罗马是联合国成员国",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Rome",
+       "form": "罗马",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "UN member country",
+       "form": "联合国成员国",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1764|wrong|0",
+   "sid": "test/1764",
+   "arm": "wrong",
+   "talk": "wikinews:Funeral of Pope John Paul II takes place",
+   "t": "St. Peter's Square",
+   "w": "圣彼得广场",
+   "w_wrong": "尼拉贡戈火山",
+   "en": "The number of people present was so large that it was not possible for everybody to gain access to the funeral in St. Peter's Square.",
+   "duration": 9.66,
+   "final": "罗马的葬礼人数如此之多，以至于不可能让每个人都能进入圣彼得广场参加葬礼。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "罗马的葬礼",
+     "added": "罗马的葬礼",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Rome",
+       "form": "罗马",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "funeral",
+       "form": "葬礼",
+       "spoken_end": 6.24,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1917|correct|0",
+   "sid": "test/1917",
+   "arm": "correct",
+   "talk": "wikinews:Funeral of Pope John Paul II takes place",
+   "t": "Rome",
+   "w": "罗马",
+   "w_wrong": "车库",
+   "en": "Several large television screens were installed in various places in Rome to let the people watch the ceremony.",
+   "duration": 10.26,
+   "final": "罗马的葬礼在圣彼得广场举行，许多大屏幕电视被安装在各个地方，让罗马人民观看这个仪式。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "罗马的葬礼在圣彼得广场举行",
+     "added": "罗马的葬礼在圣彼得广场举行",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Rome",
+       "form": "罗马",
+       "spoken_end": 6.02,
+       "probe": true
+      },
+      {
+       "en": "funeral",
+       "form": "葬礼",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "St. Peter's Square",
+       "form": "圣彼得广场",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1967|irrelevant|0",
+   "sid": "test/1967",
+   "arm": "irrelevant",
+   "talk": "wikinews:Canadian Prime Minister Harper agrees to send 'Clean Air Act' to committee",
+   "t": "Layton",
+   "w": "莱顿 (Layton)",
+   "w_wrong": "萨罗贾·巴拉苏布拉曼尼亚",
+   "en": "Layton had asked for changes to the conservatives' environmental bill during the meeting with the PM, asking for a \"thorough and complete rewriting\" of the Conservative party's environmental bill.",
+   "duration": 9.72,
+   "final": "在与总理斯蒂芬·哈珀的会面中，新民主党党魁杰克·林顿要求对保守党的《清洁空气法》进行彻底和全面的修改。",
+   "steps": [
+    {
+     "step_end": 6.0,
+     "committed_before": "",
+     "committed_after": "在与总理斯蒂芬·哈珀的会面中，新民主党党魁杰克·林顿要求对保守党的《清洁空气法》进行",
+     "added": "在与总理斯蒂芬·哈珀的会面中，新民主党党魁杰克·林顿要求对保守党的《清洁空气法》进行",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "Prime Minister Stephen Harper",
+       "form": "总理斯蒂芬·哈珀",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Clean Air Act",
+       "form": "《清洁空气法》",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "NDP leader Jack Layton",
+       "form": "新民主党党魁杰克·林顿",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Conservative party",
+       "form": "保守党",
+       "spoken_end": 8.12,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1967|wrong|0",
+   "sid": "test/1967",
+   "arm": "wrong",
+   "talk": "wikinews:Canadian Prime Minister Harper agrees to send 'Clean Air Act' to committee",
+   "t": "Layton",
+   "w": "莱顿 (Layton)",
+   "w_wrong": "萨罗贾·巴拉苏布拉曼尼亚",
+   "en": "Layton had asked for changes to the conservatives' environmental bill during the meeting with the PM, asking for a \"thorough and complete rewriting\" of the Conservative party's environmental bill.",
+   "duration": 9.72,
+   "final": "萨罗贾·巴拉苏布拉曼尼亚在与总理斯蒂芬·哈珀的会面中要求对保守党的《清洁空气法》进行修改，要求进行彻底和全面的重写。",
+   "steps": [
+    {
+     "step_end": 6.0,
+     "committed_before": "萨罗贾·巴拉苏布拉曼尼亚在",
+     "committed_after": "萨罗贾·巴拉苏布拉曼尼亚在与总理斯蒂芬·哈珀的会面中要求对保守党的《清洁空气法》进行修改",
+     "added": "与总理斯蒂芬·哈珀的会面中要求对保守党的《清洁空气法》进行修改",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Prime Minister Stephen Harper",
+       "form": "总理斯蒂芬·哈珀",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Clean Air Act",
+       "form": "《清洁空气法》",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Conservative party",
+       "form": "保守党",
+       "spoken_end": 8.12,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1542|correct|0",
+   "sid": "dev/1542",
+   "arm": "correct",
+   "talk": "wikinews:North Korea agrees to disable its main nuclear reactor",
+   "t": "North Korea",
+   "w": "朝鲜",
+   "w_wrong": "剑桥",
+   "en": "Bush spokesman Gordon Johndroe called North Korea's pledge \"a major step towards the goal of achieving the verifiable denuclearization of the Korean peninsula.\"",
+   "duration": 9.24,
+   "final": "布什发言人戈登·约翰罗称，朝鲜的这一承诺是朝着实现可验证的朝鲜半岛无核化目标迈出的重大一步。",
+   "steps": [
+    {
+     "step_end": 7.0,
+     "committed_before": "布什发言人戈登·约翰罗称，朝鲜的这一承诺是朝着实现",
+     "committed_after": "布什发言人戈登·约翰罗称，朝鲜的这一承诺是朝着实现可验证的朝鲜半岛无核化目标迈出的重大一步",
+     "added": "可验证的朝鲜半岛无核化目标迈出的重大一步",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "denuclearization",
+       "form": "无核化",
+       "spoken_end": 7.24,
+       "probe": false
+      },
+      {
+       "en": "Korean peninsula",
+       "form": "朝鲜半岛",
+       "spoken_end": 8.78,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1542|wrong|0",
+   "sid": "dev/1542",
+   "arm": "wrong",
+   "talk": "wikinews:North Korea agrees to disable its main nuclear reactor",
+   "t": "North Korea",
+   "w": "朝鲜",
+   "w_wrong": "剑桥",
+   "en": "Bush spokesman Gordon Johndroe called North Korea's pledge \"a major step towards the goal of achieving the verifiable denuclearization of the Korean peninsula.\"",
+   "duration": 9.24,
+   "final": "美国总统乔治·沃克·布什的发言人戈登·约翰罗称，剑桥的无核化承诺是实现可验证的朝鲜半岛无核化目标的重要一步。",
+   "steps": [
+    {
+     "step_end": 7.0,
+     "committed_before": "美国总统乔治·沃克·布什的发言人戈登·约翰罗称，剑桥的无核化承诺是实现",
+     "committed_after": "美国总统乔治·沃克·布什的发言人戈登·约翰罗称，剑桥的无核化承诺是实现可验证的朝鲜半岛无核化目标的重要一步",
+     "added": "可验证的朝鲜半岛无核化目标的重要一步",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "denuclearization",
+       "form": "无核化",
+       "spoken_end": 7.24,
+       "probe": false
+      },
+      {
+       "en": "Korean peninsula",
+       "form": "朝鲜半岛",
+       "spoken_end": 8.78,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1993|correct|0",
+   "sid": "test/1993",
+   "arm": "correct",
+   "talk": "wikinews:Subtropical storm forms over the Atlantic",
+   "t": "Atlantic Hurricane season",
+   "w": "大西洋飓风季节",
+   "w_wrong": "伊朗人质危机",
+   "en": "The tenth named storm of the Atlantic Hurricane season, Subtropical Storm Jerry, formed in the Atlantic Ocean today.",
+   "duration": 8.66,
+   "final": "大西洋飓风季节的紧张风暴杰瑞正在大西洋上空形成。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "大西洋飓风季节的",
+     "committed_after": "大西洋飓风季节的紧张风暴杰瑞正在大西洋上空形成",
+     "added": "紧张风暴杰瑞正在大西洋上空形成",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Atlantic Ocean",
+       "form": "大西洋",
+       "spoken_end": 6.74,
+       "probe": false
+      },
+      {
+       "en": "Jerry",
+       "form": "杰瑞",
+       "spoken_end": 4.9,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1993|irrelevant|0",
+   "sid": "test/1993",
+   "arm": "irrelevant",
+   "talk": "wikinews:Subtropical storm forms over the Atlantic",
+   "t": "Atlantic Hurricane season",
+   "w": "大西洋飓风季节",
+   "w_wrong": "伊朗人质危机",
+   "en": "The tenth named storm of the Atlantic Hurricane season, Subtropical Storm Jerry, formed in the Atlantic Ocean today.",
+   "duration": 8.66,
+   "final": "亚热带风暴杰瑞正在大西洋上空形成，这是大西洋飓风季节的紧张风暴。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "亚热带风暴杰瑞正在大西洋上空形成",
+     "added": "亚热带风暴杰瑞正在大西洋上空形成",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Subtropical Storm Jerry",
+       "form": "亚热带风暴杰瑞",
+       "spoken_end": 4.9,
+       "probe": false
+      },
+      {
+       "en": "Atlantic Ocean",
+       "form": "大西洋",
+       "spoken_end": 6.74,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/2007|correct|0",
+   "sid": "test/2007",
+   "arm": "correct",
+   "talk": "wikinews:Parts of New Orleans flood again",
+   "t": "U.S. Corps of Engineers",
+   "w": "美国陆军工兵部队",
+   "w_wrong": "太平洋海啸预警中心",
+   "en": "The U.S. Corps of Engineers estimated that 6 inches of rainfall could breach the previously damaged levees.",
+   "duration": 8.76,
+   "final": "美国陆军工兵部队在第九区建造堤坝，以应对卡特里娜飓风带来的六英寸降雨量。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "美国陆军工兵部队在第九区建造堤坝，以应对卡特里娜飓风",
+     "added": "美国陆军工兵部队在第九区建造堤坝，以应对卡特里娜飓风",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "U.S. Corps of Engineers",
+       "form": "美国陆军工兵部队",
+       "spoken_end": 2.68,
+       "probe": true
+      },
+      {
+       "en": "levees",
+       "form": "堤坝",
+       "spoken_end": 7.42,
+       "probe": false
+      },
+      {
+       "en": "The Ninth Ward",
+       "form": "第九区",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1734|wrong|0",
+   "sid": "test/1734",
+   "arm": "wrong",
+   "talk": "wikinews:Dark matter lacks extra gravitational force",
+   "t": "dark matter",
+   "w": "暗物质",
+   "w_wrong": "生态系统",
+   "en": "The scientists were able to conclude that the dark matter affect other dark matter in the same way regular matter does.",
+   "duration": 12.12,
+   "final": "科学家们能够得出结论，人马座星系的暗物质影响了其他星系的暗物质，就像银河系的暗物质影响月球的潮汐一样。",
+   "steps": [
+    {
+     "step_end": 12.12,
+     "committed_before": "科学家们能够得出结论，人马座星系的暗物质影响了其他星系的暗物质，就像银河系的暗物质影响",
+     "committed_after": "科学家们能够得出结论，人马座星系的暗物质影响了其他星系的暗物质，就像银河系的暗物质影响月球的潮汐一样。",
+     "added": "月球的潮汐一样。",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "moon",
+       "form": "月球",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "tides",
+       "form": "潮汐",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1759|irrelevant|0",
+   "sid": "test/1759",
+   "arm": "irrelevant",
+   "talk": "wikinews:Doctor to be charged after mother's death in Ohio",
+   "t": "Blue Ash",
+   "w": "布鲁艾施",
+   "w_wrong": "部队营地",
+   "en": "Dr. Malar Balasubramanian, 29, was found in Blue Ash, Ohio, a suburb approximately 15 miles north of Cincinnati lying on the ground beside the road in a T-shirt and underwear in an apparently heavily medicated state.",
+   "duration": 14.28,
+   "final": "匹兹堡儿童医院的医生米勒博士说，萨罗贾·巴拉苏布拉曼尼亚在星期三被发现死在俄亥俄州蓝橡树镇，一个距离辛辛那提市大约15英里北面的郊区。她被发现时躺在一辆黑色的奥兹莫比尔“激情”轿车里，距离她家大约500英尺远，穿着T恤和内衣，显然处于严重药物影响的状态。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "匹兹堡儿童医院的医生",
+     "committed_after": "匹兹堡儿童医院的医生米勒博士说，萨罗贾·巴拉苏布拉曼尼亚在星期三被发现死在",
+     "added": "米勒博士说，萨罗贾·巴拉苏布拉曼尼亚在星期三被发现死在",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Wednesday",
+       "form": "星期三",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Saroja Balasubramanian",
+       "form": "萨罗贾·巴拉苏布拉曼尼亚",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1790|correct|0",
+   "sid": "test/1790",
+   "arm": "correct",
+   "talk": "wikinews:Noted stamp engraver Czeslaw Slania dies at 83",
+   "t": "household names",
+   "w": "家喻户晓",
+   "w_wrong": "山区夏令时",
+   "en": "His work is of such recognized quality and detail that he is one of the very few \"household names\" among philatelists. Some specialize in collecting his work alone.",
+   "duration": 14.66,
+   "final": "他的作品以其公认的品质和细节而闻名，他是为数不多的在集邮人士中家喻户晓的首席邮票雕刻师之一，有些人专门收集他的作品。",
+   "steps": [
+    {
+     "step_end": 10.0,
+     "committed_before": "他的作品以其公认的品质和细节而闻名，他是为数不多的",
+     "committed_after": "他的作品以其公认的品质和细节而闻名，他是为数不多的在集邮人士中家喻户晓的首席邮票雕刻师之一",
+     "added": "在集邮人士中家喻户晓的首席邮票雕刻师之一",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "chief engraver",
+       "form": "首席邮票雕刻师",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "philatelists",
+       "form": "集邮人士",
+       "spoken_end": 10.42,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1790|wrong|0",
+   "sid": "test/1790",
+   "arm": "wrong",
+   "talk": "wikinews:Noted stamp engraver Czeslaw Slania dies at 83",
+   "t": "household names",
+   "w": "家喻户晓",
+   "w_wrong": "山区夏令时",
+   "en": "His work is of such recognized quality and detail that he is one of the very few \"household names\" among philatelists. Some specialize in collecting his work alone.",
+   "duration": 14.66,
+   "final": "他的作品以其公认的品质和细节而闻名，他是为数不多的在集邮人士中广为人知的首席邮票雕刻师之一，有些人专门收集他的作品。",
+   "steps": [
+    {
+     "step_end": 10.0,
+     "committed_before": "他的作品以其公认的品质和细节而闻名，他是为数不多的",
+     "committed_after": "他的作品以其公认的品质和细节而闻名，他是为数不多的在集邮人士中广为人知的首席邮票雕刻师之一",
+     "added": "在集邮人士中广为人知的首席邮票雕刻师之一",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "chief engraver",
+       "form": "首席邮票雕刻师",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "philatelists",
+       "form": "集邮人士",
+       "spoken_end": 10.42,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1989|correct|0",
+   "sid": "test/1989",
+   "arm": "correct",
+   "talk": "wikinews:Noted stamp engraver Czeslaw Slania dies at 83",
+   "t": "Prime Ministerial portraits",
+   "w": "总理肖像",
+   "w_wrong": "卡布奇诺",
+   "en": "He was also engaged in engraving banknotes for many countries, recent examples of his work including the Prime Ministerial portraits on the front of the new Canadian $5 and $100 bills.",
+   "duration": 18.42,
+   "final": "他还在为许多国家的邮票雕刻版画。他近期的作品包括瑞典国王的伟大功绩、瑞典首相肖像等。他的作品在吉尼斯世界纪录大全中被列为世界纪录。他的作品还包括加拿大新发行的5加元和100加元钞票上的总理肖像。",
+   "steps": [
+    {
+     "step_end": 11.0,
+     "committed_before": "他还在为许多国家的邮票雕刻版画",
+     "committed_after": "他还在为许多国家的邮票雕刻版画。他近期的作品包括瑞典国王的伟大功绩、瑞典首相肖像等。他的作品在吉尼斯世界纪录大全中",
+     "added": "。他近期的作品包括瑞典国王的伟大功绩、瑞典首相肖像等。他的作品在吉尼斯世界纪录大全中",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Great Deeds by Swedish Kings",
+       "form": "瑞典国王的伟大功绩",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Guinness Book of World Records",
+       "form": "吉尼斯世界纪录大全",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1989|irrelevant|0",
+   "sid": "test/1989",
+   "arm": "irrelevant",
+   "talk": "wikinews:Noted stamp engraver Czeslaw Slania dies at 83",
+   "t": "Prime Ministerial portraits",
+   "w": "总理肖像",
+   "w_wrong": "卡布奇诺",
+   "en": "He was also engaged in engraving banknotes for many countries, recent examples of his work including the Prime Ministerial portraits on the front of the new Canadian $5 and $100 bills.",
+   "duration": 18.42,
+   "final": "他还在为许多国家的邮票雕刻版画。他近期的作品包括《瑞典国王的伟大功绩》。他的作品被吉尼斯世界纪录大全收录。他的作品还出现在加拿大新发行的5加元和100加元钞票的正面。",
+   "steps": [
+    {
+     "step_end": 11.0,
+     "committed_before": "他还在为许多国家的邮票雕刻版画。他近期的作品包括",
+     "committed_after": "他还在为许多国家的邮票雕刻版画。他近期的作品包括《瑞典国王的伟大功绩》。他的作品被吉尼斯世界纪录大全收录",
+     "added": "《瑞典国王的伟大功绩》。他的作品被吉尼斯世界纪录大全收录",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Great Deeds by Swedish Kings",
+       "form": "瑞典国王的伟大功绩",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Guinness Book of World Records",
+       "form": "吉尼斯世界纪录大全",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/2008|correct|0",
+   "sid": "test/2008",
+   "arm": "correct",
+   "talk": "wikinews:Bali climate change conference begins",
+   "t": "Bali",
+   "w": "巴厘岛",
+   "w_wrong": "鳄鱼河",
+   "en": "Other subjects on the agenda in Bali include saving the world's remaining forests, and sharing technologies to help developing nations grow in less-polluting ways.",
+   "duration": 9.66,
+   "final": "其他议题包括拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金来帮助有关国家应对全球变暖。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "其他议题包括",
+     "committed_after": "其他议题包括拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金来帮助有关国家应对全球变暖",
+     "added": "拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金来帮助有关国家应对全球变暖",
+     "n_terms": 6,
+     "terms": [
+      {
+       "en": "sharing technologies",
+       "form": "分享技术",
+       "spoken_end": 5.38,
+       "probe": false
+      },
+      {
+       "en": "developing nations",
+       "form": "发展中国家",
+       "spoken_end": 6.6,
+       "probe": false
+      },
+      {
+       "en": "less-polluting ways",
+       "form": "污染较少的方式",
+       "spoken_end": 8.02,
+       "probe": false
+      },
+      {
+       "en": "fund",
+       "form": "基金",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "countries affected by global warming",
+       "form": "有关国家",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "global warming",
+       "form": "全球变暖",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/2008|irrelevant|0",
+   "sid": "test/2008",
+   "arm": "irrelevant",
+   "talk": "wikinews:Bali climate change conference begins",
+   "t": "Bali",
+   "w": "巴厘岛",
+   "w_wrong": "鳄鱼河",
+   "en": "Other subjects on the agenda in Bali include saving the world's remaining forests, and sharing technologies to help developing nations grow in less-polluting ways.",
+   "duration": 9.66,
+   "final": "巴厘岛会议议程上的其他议题包括拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金帮助有关国家应对全球变暖。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "巴厘岛会议议程上的其他议题包括",
+     "committed_after": "巴厘岛会议议程上的其他议题包括拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金",
+     "added": "拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "sharing technologies",
+       "form": "分享技术",
+       "spoken_end": 5.38,
+       "probe": false
+      },
+      {
+       "en": "developing nations",
+       "form": "发展中国家",
+       "spoken_end": 6.6,
+       "probe": false
+      },
+      {
+       "en": "less-polluting ways",
+       "form": "污染较少的方式",
+       "spoken_end": 8.02,
+       "probe": false
+      },
+      {
+       "en": "fund",
+       "form": "基金",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 7.0,
+     "committed_before": "巴厘岛会议议程上的其他议题包括拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金",
+     "committed_after": "巴厘岛会议议程上的其他议题包括拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式以及设立基金帮助有关国家应对全球变暖",
+     "added": "帮助有关国家应对全球变暖",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "countries affected by global warming",
+       "form": "有关国家",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "global warming",
+       "form": "全球变暖",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/2008|wrong|0",
+   "sid": "test/2008",
+   "arm": "wrong",
+   "talk": "wikinews:Bali climate change conference begins",
+   "t": "Bali",
+   "w": "巴厘岛",
+   "w_wrong": "鳄鱼河",
+   "en": "Other subjects on the agenda in Bali include saving the world's remaining forests, and sharing technologies to help developing nations grow in less-polluting ways.",
+   "duration": 9.66,
+   "final": "其他议题包括：拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式、以及有关国家应对全球变暖。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "其他议题包括：",
+     "committed_after": "其他议题包括：拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式、",
+     "added": "拯救世界上现存的森林、分享技术、发展中国家采用污染较少的方式、",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "sharing technologies",
+       "form": "分享技术",
+       "spoken_end": 5.38,
+       "probe": false
+      },
+      {
+       "en": "developing nations",
+       "form": "发展中国家",
+       "spoken_end": 6.6,
+       "probe": false
+      },
+      {
+       "en": "less-polluting ways",
+       "form": "污染较少的方式",
+       "spoken_end": 8.02,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1835|correct|0",
+   "sid": "test/1835",
+   "arm": "correct",
+   "talk": "wikinews:Strong 6.3 earthquake reported in Sumatra, Indonesia",
+   "t": "Jakarta geophysics agency",
+   "w": "雅加达地质局",
+   "w_wrong": "本地管理层",
+   "en": "No tsunami warning has been issued, and according to the Jakarta geophysics agency, no tsunami warning will be issued because the quake did not meet the magnitude 6.5 requirement.",
+   "duration": 11.88,
+   "final": "雅加达地质局没有发布海啸预警，当地居民、生意和家园都没有受到影响。",
+   "steps": [
+    {
+     "step_end": 4.0,
+     "committed_before": "雅加达地质局没有发布海啸预警",
+     "committed_after": "雅加达地质局没有发布海啸预警，当地居民、生意和家园都没有受到影响",
+     "added": "，当地居民、生意和家园都没有受到影响",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "residents",
+       "form": "当地居民",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "businesses",
+       "form": "生意",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "homes",
+       "form": "家园",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1670|irrelevant|0",
+   "sid": "test/1670",
+   "arm": "irrelevant",
+   "talk": "wikinews:Seven caves found on Mars: NASA",
+   "t": "Glen Cushing",
+   "w": "格伦·库欣",
+   "w_wrong": "六名人质",
+   "en": "Their thermal behavior is not as steady as large caves on Earth that often maintain a fairly constant temperature, but it is consistent with these being deep holes in the ground,\" said Glen Cushing of the United States Geological Survey (USGS) Astrogeology Team and of Northern Arizona University located in Flagstaff, Arizona.",
+   "duration": 29.3,
+   "final": "它们的热行为不像地球上的大型洞穴那样稳定，后者通常保持相当恒定的温度，但与这些是地下的深洞是一致的，格兰特·克里希说，他是美国地质调查局的天体地质学家团队的一员，来自北亚利桑那大学，位于旗杆镇。",
+   "steps": [
+    {
+     "step_end": 22.0,
+     "committed_before": "它们的热行为不像地球上的大型洞穴那样稳定，后者通常保持相当恒定的温度，但与这些是地下的深洞是一致的，格兰特·克里希说，他是美国地质调查局的天体地质学家团队",
+     "committed_after": "它们的热行为不像地球上的大型洞穴那样稳定，后者通常保持相当恒定的温度，但与这些是地下的深洞是一致的，格兰特·克里希说，他是美国地质调查局的天体地质学家团队的一员，来自北亚利桑那大学，位于旗杆镇",
+     "added": "的一员，来自北亚利桑那大学，位于旗杆镇",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Northern Arizona University",
+       "form": "北亚利桑那大学",
+       "spoken_end": 23.22,
+       "probe": false
+      },
+      {
+       "en": "Flagstaff",
+       "form": "旗杆镇",
+       "spoken_end": 25.96,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1591|wrong|0",
+   "sid": "dev/1591",
+   "arm": "wrong",
+   "talk": "wikinews:Mitt Romney wins Iowa Caucus by eight votes over surging Rick Santorum",
+   "t": "Newt Gingrich",
+   "w": "纽特·金里奇",
+   "w_wrong": "玛丽·特蕾莎",
+   "en": "Former House Speaker Newt Gingrich, Texas governor Rick Perry, and Congresswoman Michele Bachmann finished in fourth, fifth, and sixth place, respectively.",
+   "duration": 10.56,
+   "final": "前众议院议长金里奇在德克萨斯州州长里克·佩里和国会议员米歇尔·巴赫曼的陪同下，参加了爱荷华州举行的南卡罗莱纳州初选和埃姆斯模拟民意调查，分别获得了第四、第五和第六名。",
+   "steps": [
+    {
+     "step_end": 6.0,
+     "committed_before": "前众议院议长金里奇在德克萨斯州州长里克·佩里",
+     "committed_after": "前众议院议长金里奇在德克萨斯州州长里克·佩里和国会议员米歇尔·巴赫曼的陪同下，参加了爱荷华州举行的南卡罗莱纳州初选和埃姆斯模拟民意调查",
+     "added": "和国会议员米歇尔·巴赫曼的陪同下，参加了爱荷华州举行的南卡罗莱纳州初选和埃姆斯模拟民意调查",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Iowa",
+       "form": "爱荷华州",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Ames Straw Poll",
+       "form": "埃姆斯模拟民意调查",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1527|correct|0",
+   "sid": "dev/1527",
+   "arm": "correct",
+   "talk": "wikinews:Austria leads medal count after second day of 2013 IPC Alpine World Championships",
+   "t": "Poland",
+   "w": "波兰",
+   "w_wrong": "大堡礁",
+   "en": "Poland's men's visually impaired skier Maciej Krezel and guide Anna Ogarzynska finished thirteenth in the Super-G. South Korea's Jong Seork Park finished twenty-fourth in the men's sitting Super-G.",
+   "duration": 23.66,
+   "final": "男子站姿超级大回转比赛的奖牌得主是荷兰的Mitchell Gourley，他以1分1秒1的成绩获得金牌，银牌得主是卡特娅·萨里宁，铜牌得主是拉利·委拉斯开兹。男子坐姿超级大回转比赛的奖牌得主是墨西哥的亚当·霍尔，他以1分1秒2的成绩获得金牌，银牌得主是波兰的奥德里奇·耶利内克，铜牌得主是新西兰的米切尔·古尔力。男子视障滑雪选手的奖牌得主是芬兰的安娜·乔彻姆森，她以1分1秒3的成绩获得金牌，银牌得主是捷克的米切尔·古尔力，铜牌得主是韩国的拉利·委拉斯开兹。",
+   "steps": [
+    {
+     "step_end": 18.0,
+     "committed_before": "男子站姿超级大回转比赛的奖牌得主是荷兰的Mitchell Gourley，他以1分1秒1的成绩获得金牌，银牌得主是卡特娅·萨里宁，铜牌得主是",
+     "committed_after": "男子站姿超级大回转比赛的奖牌得主是荷兰的Mitchell Gourley，他以1分1秒1的成绩获得金牌，银牌得主是卡特娅·萨里宁，铜牌得主是拉利·委拉斯开兹。男子坐姿超级大回转比赛的奖牌得主是墨西哥的亚当·霍尔，他以1分1秒2的成绩获得金牌，银牌得主是波兰的奥德里奇·耶利内克，铜牌得主是新西兰的米切尔·古尔力。男子视障滑雪选手的奖牌得主是",
+     "added": "拉利·委拉斯开兹。男子坐姿超级大回转比赛的奖牌得主是墨西哥的亚当·霍尔，他以1分1秒2的成绩获得金牌，银牌得主是波兰的奥德里奇·耶利内克，铜牌得主是新西兰的米切尔·古尔力。男子视障滑雪选手的奖牌得主是",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Mitchell Gourley",
+       "form": "米切尔·古尔力",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Oldrich Jelinek",
+       "form": "奥德里奇·耶利内克",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "men's sitting Super-G",
+       "form": "男子坐姿超级大回转比赛",
+       "spoken_end": 22.06,
+       "probe": false
+      },
+      {
+       "en": "Arly Velasquez",
+       "form": "拉利·委拉斯开兹",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Mexico",
+       "form": "墨西哥",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "New Zealand",
+       "form": "新西兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Adam Hall",
+       "form": "亚当·霍尔",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    },
+    {
+     "step_end": 21.0,
+     "committed_before": "男子站姿超级大回转比赛的奖牌得主是荷兰的Mitchell Gourley，他以1分1秒1的成绩获得金牌，银牌得主是卡特娅·萨里宁，铜牌得主是拉利·委拉斯开兹。男子坐姿超级大回转比赛的奖牌得主是墨西哥的亚当·霍尔，他以1分1秒2的成绩获得金牌，银牌得主是波兰的奥德里奇·耶利内克，铜牌得主是新西兰的米切尔·古尔力。男子视障滑雪选手的奖牌得主是",
+     "committed_after": "男子站姿超级大回转比赛的奖牌得主是荷兰的Mitchell Gourley，他以1分1秒1的成绩获得金牌，银牌得主是卡特娅·萨里宁，铜牌得主是拉利·委拉斯开兹。男子坐姿超级大回转比赛的奖牌得主是墨西哥的亚当·霍尔，他以1分1秒2的成绩获得金牌，银牌得主是波兰的奥德里奇·耶利内克，铜牌得主是新西兰的米切尔·古尔力。男子视障滑雪选手的奖牌得主是芬兰的安娜·乔彻姆森，她",
+     "added": "芬兰的安娜·乔彻姆森，她",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Anna Jochemsen",
+       "form": "安娜·乔彻姆森",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Finland",
+       "form": "芬兰",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 23.66,
+     "committed_before": "男子站姿超级大回转比赛的奖牌得主是荷兰的Mitchell Gourley，他以1分1秒1的成绩获得金牌，银牌得主是卡特娅·萨里宁，铜牌得主是拉利·委拉斯开兹。男子坐姿超级大回转比赛的奖牌得主是墨西哥的亚当·霍尔，他以1分1秒2的成绩获得金牌，银牌得主是波兰的奥德里奇·耶利内克，铜牌得主是新西兰的米切尔·古尔力。男子视障滑雪选手的奖牌得主是芬兰的安娜·乔彻姆森，她",
+     "committed_after": "男子站姿超级大回转比赛的奖牌得主是荷兰的Mitchell Gourley，他以1分1秒1的成绩获得金牌，银牌得主是卡特娅·萨里宁，铜牌得主是拉利·委拉斯开兹。男子坐姿超级大回转比赛的奖牌得主是墨西哥的亚当·霍尔，他以1分1秒2的成绩获得金牌，银牌得主是波兰的奥德里奇·耶利内克，铜牌得主是新西兰的米切尔·古尔力。男子视障滑雪选手的奖牌得主是芬兰的安娜·乔彻姆森，她以1分1秒3的成绩获得金牌，银牌得主是捷克的米切尔·古尔力，铜牌得主是韩国的拉利·委拉斯开兹。",
+     "added": "以1分1秒3的成绩获得金牌，银牌得主是捷克的米切尔·古尔力，铜牌得主是韩国的拉利·委拉斯开兹。",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Mitchell Gourley",
+       "form": "米切尔·古尔力",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Czech",
+       "form": "捷克",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Arly Velasquez",
+       "form": "拉利·委拉斯开兹",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1527|irrelevant|0",
+   "sid": "dev/1527",
+   "arm": "irrelevant",
+   "talk": "wikinews:Austria leads medal count after second day of 2013 IPC Alpine World Championships",
+   "t": "Poland",
+   "w": "波兰",
+   "w_wrong": "大堡礁",
+   "en": "Poland's men's visually impaired skier Maciej Krezel and guide Anna Ogarzynska finished thirteenth in the Super-G. South Korea's Jong Seork Park finished twenty-fourth in the men's sitting Super-G.",
+   "duration": 23.66,
+   "final": "男子站姿超级大回转比赛的奖牌获得者是来自荷兰的安娜·乔彻姆森，来自芬兰的卡特娅·萨里宁和来自捷克的奥德里奇·耶利内克。男子坐姿超级大回转比赛的奖牌获得者是来自墨西哥的拉利·委拉斯开兹，来自新西兰的亚当·霍尔和来自韩国的基督教徒。男子视障滑雪选手的奖牌获得者是来自荷兰的米切尔·古尔力，来自芬兰的安娜·奥加尔辛斯卡和来自捷克的奥德里奇·耶利内克。",
+   "steps": [
+    {
+     "step_end": 4.0,
+     "committed_before": "男子站姿超级大回转比赛的奖牌获得者是",
+     "committed_after": "男子站姿超级大回转比赛的奖牌获得者是来自荷兰的安娜·乔彻姆森，来自芬兰的卡特娅·萨里宁和来自捷克的奥德里奇·耶利内克",
+     "added": "来自荷兰的安娜·乔彻姆森，来自芬兰的卡特娅·萨里宁和来自捷克的奥德里奇·耶利内克",
+     "n_terms": 6,
+     "terms": [
+      {
+       "en": "Netherlands",
+       "form": "荷兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Anna Jochemsen",
+       "form": "安娜·乔彻姆森",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Finland",
+       "form": "芬兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Katja Saarinen",
+       "form": "卡特娅·萨里宁",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Czech",
+       "form": "捷克",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Oldrich Jelinek",
+       "form": "奥德里奇·耶利内克",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 6.0,
+     "committed_before": "男子站姿超级大回转比赛的奖牌获得者是来自荷兰的安娜·乔彻姆森，来自芬兰的卡特娅·萨里宁和来自捷克的奥德里奇·耶利内克",
+     "committed_after": "男子站姿超级大回转比赛的奖牌获得者是来自荷兰的安娜·乔彻姆森，来自芬兰的卡特娅·萨里宁和来自捷克的奥德里奇·耶利内克。男子坐姿超级大回转比赛的奖牌获得者是来自墨西哥的拉利·委拉斯开兹，来自新西兰的亚当·霍尔和来自韩国的基督教徒。男子视障滑雪选手的奖牌获得者是来自",
+     "added": "。男子坐姿超级大回转比赛的奖牌获得者是来自墨西哥的拉利·委拉斯开兹，来自新西兰的亚当·霍尔和来自韩国的基督教徒。男子视障滑雪选手的奖牌获得者是来自",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "men's sitting Super-G",
+       "form": "男子坐姿超级大回转比赛",
+       "spoken_end": 22.06,
+       "probe": false
+      },
+      {
+       "en": "Arly Velasquez",
+       "form": "拉利·委拉斯开兹",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Mexico",
+       "form": "墨西哥",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "New Zealand",
+       "form": "新西兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Adam Hall",
+       "form": "亚当·霍尔",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Christianity",
+       "form": "基督教",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "South Korea",
+       "form": "韩国",
+       "spoken_end": 16.16,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 14.0,
+     "committed_before": "男子站姿超级大回转比赛的奖牌获得者是来自荷兰的安娜·乔彻姆森，来自芬兰的卡特娅·萨里宁和来自捷克的奥德里奇·耶利内克。男子坐姿超级大回转比赛的奖牌获得者是来自墨西哥的拉利·委拉斯开兹，来自新西兰的亚当·霍尔和来自韩国的基督教徒。男子视障滑雪选手的奖牌获得者是来自荷兰的米切尔·古尔力，来自芬兰的安娜·奥加尔辛斯卡和来自",
+     "committed_after": "男子站姿超级大回转比赛的奖牌获得者是来自荷兰的安娜·乔彻姆森，来自芬兰的卡特娅·萨里宁和来自捷克的奥德里奇·耶利内克。男子坐姿超级大回转比赛的奖牌获得者是来自墨西哥的拉利·委拉斯开兹，来自新西兰的亚当·霍尔和来自韩国的基督教徒。男子视障滑雪选手的奖牌获得者是来自荷兰的米切尔·古尔力，来自芬兰的安娜·奥加尔辛斯卡和来自捷克的奥德里奇·耶利内克",
+     "added": "捷克的奥德里奇·耶利内克",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Czech",
+       "form": "捷克",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Oldrich Jelinek",
+       "form": "奥德里奇·耶利内克",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1527|wrong|0",
+   "sid": "dev/1527",
+   "arm": "wrong",
+   "talk": "wikinews:Austria leads medal count after second day of 2013 IPC Alpine World Championships",
+   "t": "Poland",
+   "w": "波兰",
+   "w_wrong": "大堡礁",
+   "en": "Poland's men's visually impaired skier Maciej Krezel and guide Anna Ogarzynska finished thirteenth in the Super-G. South Korea's Jong Seork Park finished twenty-fourth in the men's sitting Super-G.",
+   "duration": 23.66,
+   "final": "男子站姿超级大回转比赛的奖牌得主是捷克选手奥德里奇·耶利内克。男子坐姿超级大回转比赛的奖牌得主是墨西哥选手拉利·委拉斯开兹。男子视障滑雪选手的奖牌得主是新西兰选手亚当·霍尔。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "男子站姿超级大回转比赛的奖牌得主是",
+     "committed_after": "男子站姿超级大回转比赛的奖牌得主是捷克选手奥德里奇·耶利内克",
+     "added": "捷克选手奥德里奇·耶利内克",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Czech",
+       "form": "捷克",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Oldrich Jelinek",
+       "form": "奥德里奇·耶利内克",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 10.0,
+     "committed_before": "男子站姿超级大回转比赛的奖牌得主是捷克选手奥德里奇·耶利内克",
+     "committed_after": "男子站姿超级大回转比赛的奖牌得主是捷克选手奥德里奇·耶利内克。男子坐姿超级大回转比赛的奖牌得主是墨西哥选手拉利·委拉斯开兹。男子视障滑雪选手的奖牌得主是新西兰选手亚当·霍尔",
+     "added": "。男子坐姿超级大回转比赛的奖牌得主是墨西哥选手拉利·委拉斯开兹。男子视障滑雪选手的奖牌得主是新西兰选手亚当·霍尔",
+     "n_terms": 5,
+     "terms": [
+      {
+       "en": "men's sitting Super-G",
+       "form": "男子坐姿超级大回转比赛",
+       "spoken_end": 22.06,
+       "probe": false
+      },
+      {
+       "en": "Arly Velasquez",
+       "form": "拉利·委拉斯开兹",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Mexico",
+       "form": "墨西哥",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "New Zealand",
+       "form": "新西兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Adam Hall",
+       "form": "亚当·霍尔",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1804|correct|0",
+   "sid": "test/1804",
+   "arm": "correct",
+   "talk": "wikinews:Haitian cholera victims threaten United Nations with lawsuit",
+   "t": "Haitian Institute for Justice and Democracy",
+   "w": "海地正义与民主研究所",
+   "w_wrong": "太平洋海啸预警中心",
+   "en": "The Haitian Institute for Justice and Democracy has referenced independent studies that suggest the Nepalese UN peacekeeping battalion unknowingly brought the disease to Haiti.",
+   "duration": 14.9,
+   "final": "海地正义与民主研究所引用了独立研究，这些研究表明，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内，不知情地将疾病带到了海地。",
+   "steps": [
+    {
+     "step_end": 10.0,
+     "committed_before": "海地正义与民主研究所引用了独立研究，这些研究表明",
+     "committed_after": "海地正义与民主研究所引用了独立研究，这些研究表明，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内",
+     "added": "，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "UN camp",
+       "form": "联合国营地",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "tributary of the Artibonite River",
+       "form": "阿蒂博尼特河的支流",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Nepalese UN peacekeeping battalion",
+       "form": "尼泊尔的联合国维和部队",
+       "spoken_end": 10.38,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1804|irrelevant|0",
+   "sid": "test/1804",
+   "arm": "irrelevant",
+   "talk": "wikinews:Haitian cholera victims threaten United Nations with lawsuit",
+   "t": "Haitian Institute for Justice and Democracy",
+   "w": "海地正义与民主研究所",
+   "w_wrong": "太平洋海啸预警中心",
+   "en": "The Haitian Institute for Justice and Democracy has referenced independent studies that suggest the Nepalese UN peacekeeping battalion unknowingly brought the disease to Haiti.",
+   "duration": 14.9,
+   "final": "海地正义与民主研究所引用了独立研究，这些研究表明，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内，不知情地将疾病带到了海地。",
+   "steps": [
+    {
+     "step_end": 9.0,
+     "committed_before": "海地正义与民主研究所引用了独立研究，这些研究表明，",
+     "committed_after": "海地正义与民主研究所引用了独立研究，这些研究表明，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内",
+     "added": "尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "UN camp",
+       "form": "联合国营地",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "tributary of the Artibonite River",
+       "form": "阿蒂博尼特河的支流",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Nepalese UN peacekeeping battalion",
+       "form": "尼泊尔的联合国维和部队",
+       "spoken_end": 10.38,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1804|wrong|0",
+   "sid": "test/1804",
+   "arm": "wrong",
+   "talk": "wikinews:Haitian cholera victims threaten United Nations with lawsuit",
+   "t": "Haitian Institute for Justice and Democracy",
+   "w": "海地正义与民主研究所",
+   "w_wrong": "太平洋海啸预警中心",
+   "en": "The Haitian Institute for Justice and Democracy has referenced independent studies that suggest the Nepalese UN peacekeeping battalion unknowingly brought the disease to Haiti.",
+   "duration": 14.9,
+   "final": "海地正义与民主研究所引用了独立研究，这些研究表明，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内，不知情地将疾病带到了海地。",
+   "steps": [
+    {
+     "step_end": 10.0,
+     "committed_before": "海地正义与民主研究所引用了独立研究，这些研究表明",
+     "committed_after": "海地正义与民主研究所引用了独立研究，这些研究表明，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内",
+     "added": "，尼泊尔的联合国维和部队在阿蒂博尼特河的支流附近的一个联合国营地的营地内",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "UN camp",
+       "form": "联合国营地",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "tributary of the Artibonite River",
+       "form": "阿蒂博尼特河的支流",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Nepalese UN peacekeeping battalion",
+       "form": "尼泊尔的联合国维和部队",
+       "spoken_end": 10.38,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1708|correct|0",
+   "sid": "test/1708",
+   "arm": "correct",
+   "talk": "wikinews:Chris Huhne resigns from UK Cabinet to face charges",
+   "t": "Huhne",
+   "w": "胡纳",
+   "w_wrong": "埃及人",
+   "en": "Huhne has resigned and he will be replaced in the Cabinet by Ed Davey MP. Norman Lamb MP is expected to take the Business Minister job Davey is vacating.",
+   "duration": 9.48,
+   "final": "胡纳已经辞职，他将在内阁中由总检察长普莱斯接替。诺曼·兰姆预计将接替埃德·戴维担任商务大臣。",
+   "steps": [
+    {
+     "step_end": 4.0,
+     "committed_before": "胡纳已经辞职，他",
+     "committed_after": "胡纳已经辞职，他将在内阁中由总检察长普莱斯接替",
+     "added": "将在内阁中由总检察长普莱斯接替",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Director of Public Prosecutions",
+       "form": "总检察长",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Pryce",
+       "form": "普莱斯",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1708|irrelevant|0",
+   "sid": "test/1708",
+   "arm": "irrelevant",
+   "talk": "wikinews:Chris Huhne resigns from UK Cabinet to face charges",
+   "t": "Huhne",
+   "w": "胡纳",
+   "w_wrong": "埃及人",
+   "en": "Huhne has resigned and he will be replaced in the Cabinet by Ed Davey MP. Norman Lamb MP is expected to take the Business Minister job Davey is vacating.",
+   "duration": 9.48,
+   "final": "休尼辞职，他将由总检察长普莱斯在内阁中接替。诺曼·兰姆预计将接替埃德·戴维担任商务大臣。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "",
+     "committed_after": "休尼辞职，他将由总检察长普莱斯在内阁中接替",
+     "added": "休尼辞职，他将由总检察长普莱斯在内阁中接替",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Director of Public Prosecutions",
+       "form": "总检察长",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Pryce",
+       "form": "普莱斯",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1575|irrelevant|0",
+   "sid": "dev/1575",
+   "arm": "irrelevant",
+   "talk": "wikinews:Leak suggests John Kerry will recognise Israel as Jewish state",
+   "t": "Israel",
+   "w": "以色列",
+   "w_wrong": "孟加拉国",
+   "en": "Israel demands an ongoing military presence in the valley for ten years once an agreement is signed while the PA agrees to leave such presence only for five years.",
+   "duration": 15.32,
+   "final": "1967年中东战争期间，以色列军队在约旦河谷地区部署了七艘舰船，并要求在协议签署后继续维持军事存在十年。而巴勒斯坦民族权力机构同意仅在五年内撤出这些军事存在。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "1967年中东战争期间，以色列军队在约旦河谷地区",
+     "added": "1967年中东战争期间，以色列军队在约旦河谷地区",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "1967 Mideast War",
+       "form": "1967年中东战争",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Jordan Valley",
+       "form": "约旦河谷",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1575|wrong|0",
+   "sid": "dev/1575",
+   "arm": "wrong",
+   "talk": "wikinews:Leak suggests John Kerry will recognise Israel as Jewish state",
+   "t": "Israel",
+   "w": "以色列",
+   "w_wrong": "孟加拉国",
+   "en": "Israel demands an ongoing military presence in the valley for ten years once an agreement is signed while the PA agrees to leave such presence only for five years.",
+   "duration": 15.32,
+   "final": "1967年中东战争期间，约旦河谷的耶路撒冷被以色列占领。以色列要求在约旦河谷保持军事存在十年，而巴勒斯坦民族权力机构同意在协议签署后仅保留五年。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "1967年中东战争期间，约旦河谷的",
+     "added": "1967年中东战争期间，约旦河谷的",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "1967 Mideast War",
+       "form": "1967年中东战争",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Jordan Valley",
+       "form": "约旦河谷",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1876|correct|0",
+   "sid": "test/1876",
+   "arm": "correct",
+   "talk": "wikinews:7.2 magnitude earthquake strikes Mariana Islands",
+   "t": "Northern Marianas",
+   "w": "北马里亚纳",
+   "w_wrong": "印度南部",
+   "en": "The Northern Marianas emergency management office said that there were no damages reported in the nation.",
+   "duration": 10.8,
+   "final": "北马里亚纳群岛的应急管理办公室正在与国内的太平洋海啸预警中心保持联系。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "",
+     "committed_after": "北马里亚纳群岛的应急管理办公室正在与国内",
+     "added": "北马里亚纳群岛的应急管理办公室正在与国内",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "emergency management office",
+       "form": "应急管理办公室",
+       "spoken_end": 3.96,
+       "probe": false
+      },
+      {
+       "en": "nation",
+       "form": "国内",
+       "spoken_end": 7.14,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1930|wrong|0",
+   "sid": "test/1930",
+   "arm": "wrong",
+   "talk": "wikinews:Hong Kong tourists held hostage in the Philippines, nine killed",
+   "t": "Six hostages",
+   "w": "六名人质",
+   "w_wrong": "意大利人",
+   "en": "Six hostages, including the children and elderly, were released early, as were the Filipino photographers.",
+   "duration": 9.16,
+   "final": "菲律宾一名前警察，香港游客，马尼拉，菲律宾，M16 步枪，意大利人，那些菲律宾摄影师，门多萨",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "菲律宾一名前警察，香港游客，马尼拉，菲律宾，M16 步枪，意大利人，那些菲律宾摄影师，门多萨",
+     "added": "菲律宾一名前警察，香港游客，马尼拉，菲律宾，M16 步枪，意大利人，那些菲律宾摄影师，门多萨",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Filipino policeman",
+       "form": "菲律宾一名前警察",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Hong Kong tourists",
+       "form": "香港游客",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Manila",
+       "form": "马尼拉",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Philippines",
+       "form": "菲律宾",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "M16 rifle",
+       "form": "M16 步枪",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Filipino photographers",
+       "form": "那些菲律宾摄影师",
+       "spoken_end": 7.22,
+       "probe": false
+      },
+      {
+       "en": "Mendoza",
+       "form": "门多萨",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1784|correct|0",
+   "sid": "test/1784",
+   "arm": "correct",
+   "talk": "wikibooks:Wikijunior:Ancient Civilizations/Norse",
+   "t": "Greenland",
+   "w": "格陵兰岛",
+   "w_wrong": "德克萨斯州",
+   "en": "Greenland was settled sparsely. In the Norse sagas they say that Erik the Red was exiled from Iceland for murder, and when travelling further west, found Greenland and named it Greenland.",
+   "duration": 19.02,
+   "final": "格陵兰岛的发现者是红胡子埃里克，他来自冰岛。在北欧传说中，据说红胡子埃里克因谋杀被流放，他向西航行，发现了格陵兰岛，并将其命名为“绿色的土地”。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "格陵兰岛的发现者是红胡子埃里克，他来自冰岛",
+     "added": "格陵兰岛的发现者是红胡子埃里克，他来自冰岛",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Erik the Red",
+       "form": "红胡子埃里克",
+       "spoken_end": 6.8,
+       "probe": false
+      },
+      {
+       "en": "Iceland",
+       "form": "冰岛",
+       "spoken_end": 8.42,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1749|correct|0",
+   "sid": "test/1749",
+   "arm": "correct",
+   "talk": "wikibooks:Wikijunior:World War II/Liberation of Western Europe",
+   "t": "Germans",
+   "w": "德国人",
+   "w_wrong": "佩里",
+   "en": "It was ruled by the \"Vichy\" French. These were French people who had made peace with the Germans in 1940 and worked with the invaders instead of fighting them.",
+   "duration": 13.74,
+   "final": "诺曼底登陆后，盟军在法国北部与德国人进行了战斗。美国和自由法国的军队在法国南部发起了龙骑兵行动。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "诺曼底登陆后，盟军在法国北部与德国人进行了",
+     "added": "诺曼底登陆后，盟军在法国北部与德国人进行了",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "D-Day landings",
+       "form": "诺曼底登陆",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "north of France",
+       "form": "法国北部",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Germans",
+       "form": "德国人",
+       "spoken_end": 7.14,
+       "probe": true
+      },
+      {
+       "en": "Allies",
+       "form": "盟军",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    },
+    {
+     "step_end": 3.0,
+     "committed_before": "诺曼底登陆后，盟军在法国北部与德国人进行了",
+     "committed_after": "诺曼底登陆后，盟军在法国北部与德国人进行了战斗。美国和自由法国的军队在法国南部发起了龙骑兵行动",
+     "added": "战斗。美国和自由法国的军队在法国南部发起了龙骑兵行动",
+     "n_terms": 5,
+     "terms": [
+      {
+       "en": "battles",
+       "form": "战斗",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Operation Dragoon",
+       "form": "龙骑兵行动",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Americans",
+       "form": "美国",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Free French forces",
+       "form": "自由法国的军队",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "southern France",
+       "form": "法国南部",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1749|irrelevant|0",
+   "sid": "test/1749",
+   "arm": "irrelevant",
+   "talk": "wikibooks:Wikijunior:World War II/Liberation of Western Europe",
+   "t": "Germans",
+   "w": "德国人",
+   "w_wrong": "佩里",
+   "en": "It was ruled by the \"Vichy\" French. These were French people who had made peace with the Germans in 1940 and worked with the invaders instead of fighting them.",
+   "duration": 13.74,
+   "final": "诺曼底登陆后，盟军在法国北部和南部展开了战斗。美国和自由法国的军队在法国南部进行了独立调查。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "诺曼底登陆后，盟军在法国北部和南部展开了",
+     "added": "诺曼底登陆后，盟军在法国北部和南部展开了",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "D-Day landings",
+       "form": "诺曼底登陆",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "north of France",
+       "form": "法国北部",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Allies",
+       "form": "盟军",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 3.0,
+     "committed_before": "诺曼底登陆后，盟军在法国北部和南部展开了",
+     "committed_after": "诺曼底登陆后，盟军在法国北部和南部展开了战斗。美国和自由法国的军队",
+     "added": "战斗。美国和自由法国的军队",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "battles",
+       "form": "战斗",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Americans",
+       "form": "美国",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Free French forces",
+       "form": "自由法国的军队",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 4.0,
+     "committed_before": "诺曼底登陆后，盟军在法国北部和南部展开了战斗。美国和自由法国的军队",
+     "committed_after": "诺曼底登陆后，盟军在法国北部和南部展开了战斗。美国和自由法国的军队在法国南部进行了独立调查",
+     "added": "在法国南部进行了独立调查",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "independent investigation",
+       "form": "独立调查",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "southern France",
+       "form": "法国南部",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1749|wrong|0",
+   "sid": "test/1749",
+   "arm": "wrong",
+   "talk": "wikibooks:Wikijunior:World War II/Liberation of Western Europe",
+   "t": "Germans",
+   "w": "德国人",
+   "w_wrong": "佩里",
+   "en": "It was ruled by the \"Vichy\" French. These were French people who had made peace with the Germans in 1940 and worked with the invaders instead of fighting them.",
+   "duration": 13.74,
+   "final": "诺曼底登陆后，盟军在法国北部与德国人进行了战斗。美国和自由法国的军队在法国南部发起了龙骑兵行动。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "诺曼底登陆后，盟军在法国北部与德国人进行了战斗。美国和自由法国的军队在法国南部发起了龙骑兵行动",
+     "added": "诺曼底登陆后，盟军在法国北部与德国人进行了战斗。美国和自由法国的军队在法国南部发起了龙骑兵行动",
+     "n_terms": 8,
+     "terms": [
+      {
+       "en": "D-Day landings",
+       "form": "诺曼底登陆",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "battles",
+       "form": "战斗",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "north of France",
+       "form": "法国北部",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Allies",
+       "form": "盟军",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Operation Dragoon",
+       "form": "龙骑兵行动",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Americans",
+       "form": "美国",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Free French forces",
+       "form": "自由法国的军队",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "southern France",
+       "form": "法国南部",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1705|correct|0",
+   "sid": "test/1705",
+   "arm": "correct",
+   "talk": "wikibooks:Wikijunior:World War II/Liberation of Western Europe",
+   "t": "Allies",
+   "w": "盟军",
+   "w_wrong": "联合国",
+   "en": "On 15 August 1940, the Allies invaded southern France, the invasion was called \"Operation Dragoon\".",
+   "duration": 10.12,
+   "final": "在8月，盟军在法国北部登陆，与德国人进行战斗。自由法国的军队和美国人一起，入侵了法国南部，这次入侵被称为龙骑兵行动。",
+   "steps": [
+    {
+     "step_end": 8.0,
+     "committed_before": "在8月，盟军在法国北部登陆，与德国人",
+     "committed_after": "在8月，盟军在法国北部登陆，与德国人进行战斗。自由法国的军队和",
+     "added": "进行战斗。自由法国的军队和",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "battles",
+       "form": "战斗",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Free French forces",
+       "form": "自由法国的军队",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1705|irrelevant|0",
+   "sid": "test/1705",
+   "arm": "irrelevant",
+   "talk": "wikibooks:Wikijunior:World War II/Liberation of Western Europe",
+   "t": "Allies",
+   "w": "盟军",
+   "w_wrong": "联合国",
+   "en": "On 15 August 1940, the Allies invaded southern France, the invasion was called \"Operation Dragoon\".",
+   "duration": 10.12,
+   "final": "在8月，诺曼底登陆的盟军在法国北部与德国人进行了战斗。自由法国的军队和美国的军队在法国南部发起了龙骑兵行动。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "",
+     "committed_after": "在8月，诺曼底登陆的盟军在法国北部与德国人进行了战斗。自由法国的军队和美国的军队在法国南部发起了龙骑兵行动",
+     "added": "在8月，诺曼底登陆的盟军在法国北部与德国人进行了战斗。自由法国的军队和美国的军队在法国南部发起了龙骑兵行动",
+     "n_terms": 8,
+     "terms": [
+      {
+       "en": "D-Day landings",
+       "form": "诺曼底登陆",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "battles",
+       "form": "战斗",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "north of France",
+       "form": "法国北部",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Germans",
+       "form": "德国人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Operation Dragoon",
+       "form": "龙骑兵行动",
+       "spoken_end": 9.4,
+       "probe": false
+      },
+      {
+       "en": "Americans",
+       "form": "美国",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Free French forces",
+       "form": "自由法国的军队",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "southern France",
+       "form": "法国南部",
+       "spoken_end": 6.24,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1702|wrong|0",
+   "sid": "test/1702",
+   "arm": "wrong",
+   "talk": "wikibooks:Wikijunior:World War II/Liberation of Western Europe",
+   "t": "Americans",
+   "w": "美国",
+   "w_wrong": "普莱斯",
+   "en": "In just two weeks the Americans and Free French forces had liberated southern France and were turning towards Germany.",
+   "duration": 10.18,
+   "final": "在两周内，盟军，包括美国人和自由法国的军队，将在法国北部登陆，而德国人则在法国南部进行战斗。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "在两周内，",
+     "committed_after": "在两周内，盟军，包括美国人和自由法国的军队，将在法国北部登陆，而德国人则在法国南部进行战斗",
+     "added": "盟军，包括美国人和自由法国的军队，将在法国北部登陆，而德国人则在法国南部进行战斗",
+     "n_terms": 5,
+     "terms": [
+      {
+       "en": "battles",
+       "form": "战斗",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "north of France",
+       "form": "法国北部",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Germans",
+       "form": "德国人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Allies",
+       "form": "盟军",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "southern France",
+       "form": "法国南部",
+       "spoken_end": 6.48,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1623|correct|0",
+   "sid": "dev/1623",
+   "arm": "correct",
+   "talk": "wikibooks:Wikijunior:United States Charters of Freedom/Constitution",
+   "t": "Articles",
+   "w": "这些条款",
+   "w_wrong": "脑炎疫苗",
+   "en": "The Articles required unanimous consent from all the states before they could be amended and states took the central government so lightly that their representatives were often absent.",
+   "duration": 13.88,
+   "final": "独立战争之后，美国的《联邦条例》要求中央政府设立一个国家行政部门，由各州政府的代表组成。然而，这些条款需要所有州的同意才能修改，而各州对中央政府的重视程度不高，导致其代表经常缺席会议。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "独立战争之后，美国的《联邦条例》",
+     "added": "独立战争之后，美国的《联邦条例》",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Revolutionary War",
+       "form": "独立战争",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Articles of Confederation",
+       "form": "《联邦条例》",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 3.0,
+     "committed_before": "独立战争之后，美国的《联邦条例》",
+     "committed_after": "独立战争之后，美国的《联邦条例》要求中央政府设立一个国家行政部门，由各州政府的代表组成",
+     "added": "要求中央政府设立一个国家行政部门，由各州政府的代表组成",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "national executive",
+       "form": "国家行政部门",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "state authorities",
+       "form": "州政府",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "central government",
+       "form": "中央政府",
+       "spoken_end": 7.5,
+       "probe": false
+      },
+      {
+       "en": "representatives",
+       "form": "代表",
+       "spoken_end": 10.24,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1623|irrelevant|0",
+   "sid": "dev/1623",
+   "arm": "irrelevant",
+   "talk": "wikibooks:Wikijunior:United States Charters of Freedom/Constitution",
+   "t": "Articles",
+   "w": "这些条款",
+   "w_wrong": "脑炎疫苗",
+   "en": "The Articles required unanimous consent from all the states before they could be amended and states took the central government so lightly that their representatives were often absent.",
+   "duration": 13.88,
+   "final": "《联邦条例》要求所有州的代表一致同意，才能对它们进行修改，而州政府对中央政府如此轻视，以至于它们的代表经常缺席。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "",
+     "committed_after": "《联邦条例》要求所有州的代表一致同意",
+     "added": "《联邦条例》要求所有州的代表一致同意",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Articles of Confederation",
+       "form": "《联邦条例》",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "representatives",
+       "form": "代表",
+       "spoken_end": 10.24,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1878|correct|0",
+   "sid": "test/1878",
+   "arm": "correct",
+   "talk": "wikibooks:European History/Challenges to Spiritual Authority",
+   "t": "Rome",
+   "w": "罗马",
+   "w_wrong": "渥太华",
+   "en": "The central authority of the church had been in Rome for over a thousand years and this concentration of power and money led many to question whether this tenet was being met.",
+   "duration": 13.12,
+   "final": "欧洲历史上的天主教会是基督教的一部分，它在欧洲各国中拥有巨大的影响力。在中世纪，教会的中心权力一直位于罗马，这一地位持续了超过千年。这种权力和财富的集中导致了对教会是否履行其使命的质疑。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "欧洲历史上的天主教会",
+     "added": "欧洲历史上的天主教会",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "European history",
+       "form": "欧洲历史",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Catholic Church",
+       "form": "天主教会",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 3.0,
+     "committed_before": "欧洲历史上的天主教会",
+     "committed_after": "欧洲历史上的天主教会是基督教的一部分，它在欧洲各国中拥有巨大的影响力",
+     "added": "是基督教的一部分，它在欧洲各国中拥有巨大的影响力",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Christian religion",
+       "form": "基督教",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "European states",
+       "form": "欧洲各国",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1878|irrelevant|0",
+   "sid": "test/1878",
+   "arm": "irrelevant",
+   "talk": "wikibooks:European History/Challenges to Spiritual Authority",
+   "t": "Rome",
+   "w": "罗马",
+   "w_wrong": "渥太华",
+   "en": "The central authority of the church had been in Rome for over a thousand years and this concentration of power and money led many to question whether this tenet was being met.",
+   "duration": 13.12,
+   "final": "欧洲历史上的天主教会是基督教的中心权威，已经存在了超过一千年的历史。这种权力和财富的集中导致了很多人质疑这种教义是否得到了满足。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "欧洲历史",
+     "committed_after": "欧洲历史上的天主教会是基督教",
+     "added": "上的天主教会是基督教",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Catholic Church",
+       "form": "天主教会",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Christian religion",
+       "form": "基督教",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1878|wrong|0",
+   "sid": "test/1878",
+   "arm": "wrong",
+   "talk": "wikibooks:European History/Challenges to Spiritual Authority",
+   "t": "Rome",
+   "w": "罗马",
+   "w_wrong": "渥太华",
+   "en": "The central authority of the church had been in Rome for over a thousand years and this concentration of power and money led many to question whether this tenet was being met.",
+   "duration": 13.12,
+   "final": "欧洲历史上的天主教会是基督教的一部分，它在欧洲各国中拥有巨大的影响力。在中世纪，教会的中心权力一直位于罗马，这种权力和财富的集中导致了对教会是否履行其使命的质疑。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "欧洲历史",
+     "committed_after": "欧洲历史上的天主教会是基督教的一部分，它在欧洲各国中拥有巨大的影响力",
+     "added": "上的天主教会是基督教的一部分，它在欧洲各国中拥有巨大的影响力",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Catholic Church",
+       "form": "天主教会",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Christian religion",
+       "form": "基督教",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "European states",
+       "form": "欧洲各国",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1524|wrong|0",
+   "sid": "dev/1524",
+   "arm": "wrong",
+   "talk": "wikibooks:French Revolution/Effects",
+   "t": "metric system",
+   "w": "度量单位",
+   "w_wrong": "原子核",
+   "en": "There are a lot of social and political effects such as the use of metric system, a shift from absolutism to republicanism, nationalism and the belief the country belongs to the people not to one sole ruler.",
+   "duration": 19.26,
+   "final": "有很多社会和政治影响，例如使用原子核系统、从专制转向共和制、民族主义、革命、军衔、才干、法国大革命、工人阶级和其他国家。",
+   "steps": [
+    {
+     "step_end": 11.0,
+     "committed_before": "有很多社会和政治影响，例如使用原子核系统",
+     "committed_after": "有很多社会和政治影响，例如使用原子核系统、从专制转向共和制、民族主义、革命、军衔、才干、法国大革命、工人阶级和其他国家",
+     "added": "、从专制转向共和制、民族主义、革命、军衔、才干、法国大革命、工人阶级和其他国家",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "nationalism",
+       "form": "民族主义",
+       "spoken_end": 11.34,
+       "probe": false
+      },
+      {
+       "en": "Revolution",
+       "form": "革命",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "army rankings",
+       "form": "军衔",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "cailaber",
+       "form": "才干",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "French Revolution",
+       "form": "法国大革命",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "working class",
+       "form": "工人阶级",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "other country's",
+       "form": "其他国家",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1739|correct|0",
+   "sid": "test/1739",
+   "arm": "correct",
+   "talk": "wikibooks:History of Islam/Early Islam",
+   "t": "Mecca",
+   "w": "麦加",
+   "w_wrong": "剑桥",
+   "en": "Resting on the top of one of the mountains north of Mecca, the cave is completely isolated from the rest of the world.",
+   "duration": 10.14,
+   "final": "在麦加以北的一座山的山顶上，这个洞穴是穆罕默德在希拉隐居的地方，它与世界其他地方紧密隔离。",
+   "steps": [
+    {
+     "step_end": 6.0,
+     "committed_before": "在麦加以北的一座山的山顶上",
+     "committed_after": "在麦加以北的一座山的山顶上，这个洞穴是穆罕默德在希拉隐居的地方",
+     "added": "，这个洞穴是穆罕默德在希拉隐居的地方",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Muhammad",
+       "form": "穆罕默德",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Hira‘",
+       "form": "希拉",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1824|correct|0",
+   "sid": "test/1824",
+   "arm": "correct",
+   "talk": "wikibooks:The Seven Wonders of the World/The Great Pyramid",
+   "t": "Giza Plateau",
+   "w": "吉萨（Giza）高原",
+   "w_wrong": "课征重税的国家/地区",
+   "en": "The Giza Plateau, or \"Giza Necropolis\" in the Egyptian Valley of the Dead contains several pyramids (of which the great pyramid is the largest), several small tombs, several temples, and the great Sphinx.",
+   "duration": 15.06,
+   "final": "吉萨大金字塔位于吉萨高原，是埃及死亡之谷的一部分。吉萨金字塔群包括大金字塔、小坟墓、寺庙和大狮身人面像。大金字塔是为法老胡夫建造的。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "吉萨大金字塔位于吉萨高原，是埃及死亡之谷的一部分。吉萨金字塔群包括大金字塔、小坟墓、寺庙和大狮身人面像。大金字塔是为法老胡夫建造的",
+     "added": "吉萨大金字塔位于吉萨高原，是埃及死亡之谷的一部分。吉萨金字塔群包括大金字塔、小坟墓、寺庙和大狮身人面像。大金字塔是为法老胡夫建造的",
+     "n_terms": 9,
+     "terms": [
+      {
+       "en": "The Great Pyramid",
+       "form": "吉萨大金字塔",
+       "spoken_end": 9.18,
+       "probe": false
+      },
+      {
+       "en": "Great Pyramid",
+       "form": "大金字塔",
+       "spoken_end": 9.18,
+       "probe": false
+      },
+      {
+       "en": "Pharaoh",
+       "form": "法老",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Giza Necropolis",
+       "form": "吉萨金字塔群",
+       "spoken_end": 2.94,
+       "probe": false
+      },
+      {
+       "en": "Egyptian Valley of the Dead",
+       "form": "埃及死亡之谷",
+       "spoken_end": 5.84,
+       "probe": false
+      },
+      {
+       "en": "small tombs",
+       "form": "小坟墓",
+       "spoken_end": 11.88,
+       "probe": false
+      },
+      {
+       "en": "temples",
+       "form": "寺庙",
+       "spoken_end": 12.66,
+       "probe": false
+      },
+      {
+       "en": "great Sphinx",
+       "form": "大狮身人面像",
+       "spoken_end": 13.96,
+       "probe": false
+      },
+      {
+       "en": "Khufu",
+       "form": "胡夫",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1824|irrelevant|0",
+   "sid": "test/1824",
+   "arm": "irrelevant",
+   "talk": "wikibooks:The Seven Wonders of the World/The Great Pyramid",
+   "t": "Giza Plateau",
+   "w": "吉萨（Giza）高原",
+   "w_wrong": "课征重税的国家/地区",
+   "en": "The Giza Plateau, or \"Giza Necropolis\" in the Egyptian Valley of the Dead contains several pyramids (of which the great pyramid is the largest), several small tombs, several temples, and the great Sphinx.",
+   "duration": 15.06,
+   "final": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建，是埃及死亡之谷中的金字塔群之一。吉萨大金字塔是最大的金字塔，周围还有许多小坟墓和寺庙。此外，还有大狮身人面像。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建",
+     "added": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "The Great Pyramid",
+       "form": "吉萨大金字塔",
+       "spoken_end": 9.18,
+       "probe": false
+      },
+      {
+       "en": "Egyptians",
+       "form": "埃及人",
+       "spoken_end": 4.74,
+       "probe": false
+      },
+      {
+       "en": "Pharaoh",
+       "form": "法老",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Khufu",
+       "form": "胡夫",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1824|wrong|0",
+   "sid": "test/1824",
+   "arm": "wrong",
+   "talk": "wikibooks:The Seven Wonders of the World/The Great Pyramid",
+   "t": "Giza Plateau",
+   "w": "吉萨（Giza）高原",
+   "w_wrong": "课征重税的国家/地区",
+   "en": "The Giza Plateau, or \"Giza Necropolis\" in the Egyptian Valley of the Dead contains several pyramids (of which the great pyramid is the largest), several small tombs, several temples, and the great Sphinx.",
+   "duration": 15.06,
+   "final": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建，是吉萨金字塔群的一部分。吉萨金字塔群还包括埃及死亡之谷和一些小坟墓。此外，吉萨大金字塔附近还有大狮身人面像和一些寺庙。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建，是",
+     "added": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建，是",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "The Great Pyramid",
+       "form": "吉萨大金字塔",
+       "spoken_end": 9.18,
+       "probe": false
+      },
+      {
+       "en": "Egyptians",
+       "form": "埃及人",
+       "spoken_end": 4.74,
+       "probe": false
+      },
+      {
+       "en": "Pharaoh",
+       "form": "法老",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Khufu",
+       "form": "胡夫",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 7.0,
+     "committed_before": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建，是吉萨金字塔群的一部分。吉萨金字塔群还包括埃及死亡之谷和一些小坟墓。此外，",
+     "committed_after": "吉萨大金字塔位于吉萨，是埃及人建造的。它是为了法老胡夫而建，是吉萨金字塔群的一部分。吉萨金字塔群还包括埃及死亡之谷和一些小坟墓。此外，吉萨大金字塔附近还有大狮身人面像和",
+     "added": "吉萨大金字塔附近还有大狮身人面像和",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "The Great Pyramid",
+       "form": "吉萨大金字塔",
+       "spoken_end": 9.18,
+       "probe": false
+      },
+      {
+       "en": "great Sphinx",
+       "form": "大狮身人面像",
+       "spoken_end": 13.96,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1539|wrong|0",
+   "sid": "dev/1539",
+   "arm": "wrong",
+   "talk": "wikibooks:Introduction to Sociology/Culture",
+   "t": "subculture",
+   "w": "亚文化",
+   "w_wrong": "护照检查",
+   "en": "Members of a subculture often signal their membership through a distinctive and symbolic use of style, which includes fashions, mannerisms, and argot.",
+   "duration": 8.4,
+   "final": "成员们经常通过独特的和象征性的风格使用来表明他们的成员身份，这包括时尚服装、举止、黑话。",
+   "steps": [
+    {
+     "step_end": 7.0,
+     "committed_before": "成员们经常通过独特的和象征性的风格使用来表明他们的成员身份",
+     "committed_after": "成员们经常通过独特的和象征性的风格使用来表明他们的成员身份，这包括时尚服装、举止、黑话",
+     "added": "，这包括时尚服装、举止、黑话",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "mannerisms",
+       "form": "举止",
+       "spoken_end": 7.12,
+       "probe": false
+      },
+      {
+       "en": "argot",
+       "form": "黑话",
+       "spoken_end": 7.78,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1961|irrelevant|0",
+   "sid": "test/1961",
+   "arm": "irrelevant",
+   "talk": "wikibooks:Introduction to Sociology/Socialization",
+   "t": "socialization",
+   "w": "社会化",
+   "w_wrong": "两点",
+   "en": "One of the most common methods used to illustrate the importance of socialization is to draw upon the few unfortunate cases of children who were, through neglect, misfortune, or wilful abuse, not socialized by adults while they were growing up.",
+   "duration": 14.1,
+   "final": "最常用的方法来说明社会化的意义是什么？是通过引用那些不幸的孩子的例子，这些孩子由于忽视、不幸或故意虐待而没有被成年人社会化，当他们成长时，他们被描述为“野孩子”或“狼孩”。这些孩子要么被遗弃，要么有严重的智力或身体缺陷，要么与非人类动物一起生活。",
+   "steps": [
+    {
+     "step_end": 14.1,
+     "committed_before": "最常用的方法来说明社会化的意义是什么？是通过引用那些不幸的孩子的例子，这些孩子由于忽视、不幸或故意虐待而没有被成年人社会化，",
+     "committed_after": "最常用的方法来说明社会化的意义是什么？是通过引用那些不幸的孩子的例子，这些孩子由于忽视、不幸或故意虐待而没有被成年人社会化，当他们成长时，他们被描述为“野孩子”或“狼孩”。这些孩子要么被遗弃，要么有严重的智力或身体缺陷，要么与非人类动物一起生活。",
+     "added": "当他们成长时，他们被描述为“野孩子”或“狼孩”。这些孩子要么被遗弃，要么有严重的智力或身体缺陷，要么与非人类动物一起生活。",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "feral",
+       "form": "野",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "feral child",
+       "form": "狼孩",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1600|correct|0",
+   "sid": "dev/1600",
+   "arm": "correct",
+   "talk": "wikibooks:Applied Ecology/Nature Tourism",
+   "t": "ecosystem",
+   "w": "生态系统",
+   "w_wrong": "三分法",
+   "en": "Examples of on-site activities include hunting, fishing, photography, bird watching, and visiting parks and studying information about the ecosystem.",
+   "duration": 11.14,
+   "final": "婆罗洲的自然风光旅游业包括参观自然地区、观察野生动植物和生态系统、以及与红毛猩猩互动等现场活动。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "婆罗洲的自然风光旅游业",
+     "added": "婆罗洲的自然风光旅游业",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Nature-based tourism",
+       "form": "自然风光旅游业",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Borneo",
+       "form": "婆罗洲",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 3.0,
+     "committed_before": "婆罗洲的自然风光旅游业",
+     "committed_after": "婆罗洲的自然风光旅游业包括参观自然地区、观察野生动植物和生态系统",
+     "added": "包括参观自然地区、观察野生动植物和生态系统",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "natural areas",
+       "form": "自然地区",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "plant and animal wildlife",
+       "form": "野生动植物",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "ecosystem",
+       "form": "生态系统",
+       "spoken_end": 9.18,
+       "probe": true
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1600|wrong|0",
+   "sid": "dev/1600",
+   "arm": "wrong",
+   "talk": "wikibooks:Applied Ecology/Nature Tourism",
+   "t": "ecosystem",
+   "w": "生态系统",
+   "w_wrong": "三分法",
+   "en": "Examples of on-site activities include hunting, fishing, photography, bird watching, and visiting parks and studying information about the ecosystem.",
+   "duration": 11.14,
+   "final": "婆罗洲的自然风光旅游业包括参观自然地区、观察野生动植物和生态系统、观赏红毛猩猩等动物、进行狩猎、钓鱼、摄影、观鸟等活动。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "婆罗洲的自然风光旅游业",
+     "added": "婆罗洲的自然风光旅游业",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Nature-based tourism",
+       "form": "自然风光旅游业",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Borneo",
+       "form": "婆罗洲",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 3.0,
+     "committed_before": "婆罗洲的自然风光旅游业",
+     "committed_after": "婆罗洲的自然风光旅游业包括参观自然地区、观察野生动植物和生态系统",
+     "added": "包括参观自然地区、观察野生动植物和生态系统",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "natural areas",
+       "form": "自然地区",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "plant and animal wildlife",
+       "form": "野生动植物",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1980|irrelevant|0",
+   "sid": "test/1980",
+   "arm": "irrelevant",
+   "talk": "wikibooks:Fundamentals of Transportation/Traffic Flow",
+   "t": "driver behavior",
+   "w": "驾驶员的行为",
+   "w_wrong": "无往不胜的球队",
+   "en": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty.",
+   "duration": 12.64,
+   "final": "不幸的是，用数学方式计算交通流量是困难的，因为驾驶员的行为无法预测。",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "不幸的是，",
+     "committed_after": "不幸的是，用数学方式计算交通流量是困难的",
+     "added": "用数学方式计算交通流量是困难的",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "traffic streams",
+       "form": "交通流量",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "mathematically",
+       "form": "用数学方式",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1980|wrong|0",
+   "sid": "test/1980",
+   "arm": "wrong",
+   "talk": "wikibooks:Fundamentals of Transportation/Traffic Flow",
+   "t": "driver behavior",
+   "w": "驾驶员的行为",
+   "w_wrong": "无往不胜的球队",
+   "en": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty.",
+   "duration": 12.64,
+   "final": "不幸的是，用数学方式预测交通流量是困难的，因为驾驶员行为无法100%确定。",
+   "steps": [
+    {
+     "step_end": 9.0,
+     "committed_before": "不幸的是，",
+     "committed_after": "不幸的是，用数学方式预测交通流量",
+     "added": "用数学方式预测交通流量",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "traffic streams",
+       "form": "交通流量",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "mathematically",
+       "form": "用数学方式",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1631|correct|0",
+   "sid": "dev/1631",
+   "arm": "correct",
+   "talk": "wikibooks:Wikijunior:World Heritage Sites/Pyramids of Giza",
+   "t": "New Kingdom",
+   "w": "新王国",
+   "w_wrong": "龙卷风",
+   "en": "New Kingdom ancient Egyptians marvelled at their predecessors monuments, which were then well over a thousand year old.",
+   "duration": 9.92,
+   "final": "吉萨金字塔是古埃及人建造的，展示了他们高超的建造技术。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "吉萨金字塔是古埃及人建造的，展示了他们高超的建造技术",
+     "added": "吉萨金字塔是古埃及人建造的，展示了他们高超的建造技术",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "pyramids of Giza",
+       "form": "吉萨金字塔",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "technical excellence",
+       "form": "高超的建造技术",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "ancient Egyptians",
+       "form": "古埃及人",
+       "spoken_end": 2.12,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1781|wrong|0",
+   "sid": "test/1781",
+   "arm": "wrong",
+   "talk": "wikivoyage:East African Islands",
+   "t": "Madagascar",
+   "w": "马达加斯加",
+   "w_wrong": "北波罗的海",
+   "en": "Madagascar is by far the biggest, and a continent on its own when it comes to wildlife.",
+   "duration": 8.88,
+   "final": "马达加斯加位于非洲东海岸，是东非岛屿之一，也是印度洋上最大的岛屿。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "马达加斯加位于非洲东海岸，是东非岛屿之一",
+     "added": "马达加斯加位于非洲东海岸，是东非岛屿之一",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "East African Islands",
+       "form": "东非岛屿",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "eastern coast of Africa",
+       "form": "非洲东海岸",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1912|correct|0",
+   "sid": "test/1912",
+   "arm": "correct",
+   "talk": "wikivoyage:East African Islands",
+   "t": "luxury beach resorts",
+   "w": "豪华海滩度假胜地",
+   "w_wrong": "对氨基酸的需求",
+   "en": "Most of the smaller islands are independent nations, or associated with France, and known as luxury beach resorts.",
+   "duration": 10.52,
+   "final": "大多数较小的岛屿位于东非岛屿，靠近印度洋的非洲东海岸。这些岛屿包括马达加斯加、科摩罗、马约特和塞舌尔。许多岛屿拥有豪华海滩度假胜地，吸引着来自世界各地的游客。这些岛屿的历史可以追溯到古代，当时阿拉伯人和葡萄牙人在这里建立了贸易站。其中，马达加斯加是非洲最大的岛屿，也是非洲的生态和文化中心。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "",
+     "committed_after": "大多数较小的岛屿位于东非岛屿，靠近印度洋的非洲东海岸。这些岛屿包括马达加斯加、科摩罗、马约特和塞舌尔",
+     "added": "大多数较小的岛屿位于东非岛屿，靠近印度洋的非洲东海岸。这些岛屿包括马达加斯加、科摩罗、马约特和塞舌尔",
+     "n_terms": 6,
+     "terms": [
+      {
+       "en": "East African Islands",
+       "form": "东非岛屿",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Indian Ocean",
+       "form": "印度洋",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "eastern coast of Africa",
+       "form": "非洲东海岸",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Madagascar",
+       "form": "马达加斯加",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Comoros",
+       "form": "科摩罗",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Mayotte",
+       "form": "马约特",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 4.0,
+     "committed_before": "大多数较小的岛屿位于东非岛屿，靠近印度洋的非洲东海岸。这些岛屿包括马达加斯加、科摩罗、马约特和塞舌尔",
+     "committed_after": "大多数较小的岛屿位于东非岛屿，靠近印度洋的非洲东海岸。这些岛屿包括马达加斯加、科摩罗、马约特和塞舌尔。许多岛屿拥有豪华海滩度假胜地，吸引着来自世界各地的游客。这些岛屿的历史可以追溯到古代，当时阿拉伯人和葡萄牙人在这里建立了贸易站。其中，马达加斯加是非洲最大的岛屿，也是非洲的生态和文化中心",
+     "added": "。许多岛屿拥有豪华海滩度假胜地，吸引着来自世界各地的游客。这些岛屿的历史可以追溯到古代，当时阿拉伯人和葡萄牙人在这里建立了贸易站。其中，马达加斯加是非洲最大的岛屿，也是非洲的生态和文化中心",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "Madagascar",
+       "form": "马达加斯加",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "luxury beach resorts",
+       "form": "豪华海滩度假胜地",
+       "spoken_end": 9.62,
+       "probe": true
+      },
+      {
+       "en": "Arabs",
+       "form": "阿拉伯人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Portuguese",
+       "form": "葡萄牙",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1822|wrong|0",
+   "sid": "test/1822",
+   "arm": "wrong",
+   "talk": "wikivoyage:Casablanca",
+   "t": "Moroccan sultan",
+   "w": "摩洛哥苏丹",
+   "w_wrong": "伊丽莎白夫人",
+   "en": "The Moroccan sultan rebuilt the city as Daru l-Badya and it was given the name Casablanca by Spanish traders who established trading bases there.",
+   "duration": 11.52,
+   "final": "卡萨布兰卡的柏柏尔人、腓尼基人、罗马人、马里尼德人、安法、葡萄牙人、地震、伊丽莎白夫人、Daru l-Badya、西班牙商人、塔吉锅、陶器、皮具、水烟、小玩意儿",
+   "steps": [
+    {
+     "step_end": 5.0,
+     "committed_before": "卡萨布兰卡的",
+     "committed_after": "卡萨布兰卡的柏柏尔人、腓尼基人、罗马人、马里尼德人、安法、葡萄牙人、",
+     "added": "柏柏尔人、腓尼基人、罗马人、马里尼德人、安法、葡萄牙人、",
+     "n_terms": 6,
+     "terms": [
+      {
+       "en": "Berber",
+       "form": "柏柏尔",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Phoenicians",
+       "form": "腓尼基人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Romans",
+       "form": "罗马人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Merenids",
+       "form": "马里尼德人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Anfa",
+       "form": "安法",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Portuguese",
+       "form": "葡萄牙人",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 6.0,
+     "committed_before": "卡萨布兰卡的柏柏尔人、腓尼基人、罗马人、马里尼德人、安法、葡萄牙人、",
+     "committed_after": "卡萨布兰卡的柏柏尔人、腓尼基人、罗马人、马里尼德人、安法、葡萄牙人、地震、伊丽莎白夫人、Daru l-Badya、西班牙商人、塔吉锅、陶器、皮具、水烟、小玩意儿",
+     "added": "地震、伊丽莎白夫人、Daru l-Badya、西班牙商人、塔吉锅、陶器、皮具、水烟、小玩意儿",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "earthquake",
+       "form": "地震",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Spanish traders",
+       "form": "西班牙商人",
+       "spoken_end": 8.38,
+       "probe": false
+      },
+      {
+       "en": "tagines",
+       "form": "塔吉锅",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "pottery",
+       "form": "陶器",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "leather goods",
+       "form": "皮具",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "hookahs",
+       "form": "水烟",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "geegaws",
+       "form": "小玩意儿",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1919|irrelevant|0",
+   "sid": "test/1919",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Goma",
+   "t": "Mountain Gorilla tracking",
+   "w": "山地大猩猩追踪",
+   "w_wrong": "苏联入侵阿富汗",
+   "en": "The city is also the base to climb the Nyiragongo volcano along with some of the cheapest Mountain Gorilla tracking in Africa.",
+   "duration": 11.28,
+   "final": "刚果民主共和国的尼拉贡戈火山位于北基伍省的镇中心，是登山者攀登的起点，也是非洲最便宜的山地大猩猩交易的基地。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "刚果民主共和国的尼拉贡戈火山位于北基伍省的镇中心",
+     "added": "刚果民主共和国的尼拉贡戈火山位于北基伍省的镇中心",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "Democratic Republic of Congo",
+       "form": "刚果民主共和国",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Nyiragongo volcano",
+       "form": "尼拉贡戈火山",
+       "spoken_end": 5.36,
+       "probe": false
+      },
+      {
+       "en": "town centre",
+       "form": "镇中心",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Kivu province",
+       "form": "北基伍省",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1919|wrong|0",
+   "sid": "test/1919",
+   "arm": "wrong",
+   "talk": "wikivoyage:Goma",
+   "t": "Mountain Gorilla tracking",
+   "w": "山地大猩猩追踪",
+   "w_wrong": "苏联入侵阿富汗",
+   "en": "The city is also the base to climb the Nyiragongo volcano along with some of the cheapest Mountain Gorilla tracking in Africa.",
+   "duration": 11.28,
+   "final": "刚果民主共和国的尼拉贡戈火山位于北基伍省的镇中心，也是攀登尼拉贡戈火山的基地，同时这里也是非洲最便宜的山地大猩猩追踪活动的基地。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "刚果民主共和国的尼拉贡戈火山位于北基伍省的镇中心",
+     "added": "刚果民主共和国的尼拉贡戈火山位于北基伍省的镇中心",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "Democratic Republic of Congo",
+       "form": "刚果民主共和国",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Nyiragongo volcano",
+       "form": "尼拉贡戈火山",
+       "spoken_end": 5.36,
+       "probe": false
+      },
+      {
+       "en": "town centre",
+       "form": "镇中心",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Kivu province",
+       "form": "北基伍省",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1617|correct|0",
+   "sid": "dev/1617",
+   "arm": "correct",
+   "talk": "wikivoyage:Kruger National Park",
+   "t": "Kruger National Park",
+   "w": "克鲁格国家公园",
+   "w_wrong": "布宜诺斯艾利斯省",
+   "en": "The Kruger National Park (KNP) lies in the north-east of South Africa and runs along the border of Mozambique in the east, Zimbabwe in the north, and the southern border is the Crocodile River.",
+   "duration": 16.32,
+   "final": "克鲁格国家公园位于南非，靠近莫桑比克和津巴布韦的边界，南部边界是鳄鱼河。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "克鲁格国家公园位于南非，",
+     "added": "克鲁格国家公园位于南非，",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Kruger National Park",
+       "form": "克鲁格国家公园",
+       "spoken_end": 2.06,
+       "probe": true
+      },
+      {
+       "en": "South Africa",
+       "form": "南非",
+       "spoken_end": 5.04,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    },
+    {
+     "step_end": 3.0,
+     "committed_before": "克鲁格国家公园位于南非，",
+     "committed_after": "克鲁格国家公园位于南非，靠近莫桑比克和津巴布韦",
+     "added": "靠近莫桑比克和津巴布韦",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Mozambique",
+       "form": "莫桑比克",
+       "spoken_end": 8.7,
+       "probe": false
+      },
+      {
+       "en": "Zimbabwe",
+       "form": "津巴布韦",
+       "spoken_end": 10.46,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1617|irrelevant|0",
+   "sid": "dev/1617",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Kruger National Park",
+   "t": "Kruger National Park",
+   "w": "克鲁格国家公园",
+   "w_wrong": "布宜诺斯艾利斯省",
+   "en": "The Kruger National Park (KNP) lies in the north-east of South Africa and runs along the border of Mozambique in the east, Zimbabwe in the north, and the southern border is the Crocodile River.",
+   "duration": 16.32,
+   "final": "克鲁格国家公园位于南非东北部，沿着莫桑比克和津巴布韦的边界延伸，南部边界是鳄鱼河。",
+   "steps": [
+    {
+     "step_end": 8.0,
+     "committed_before": "克鲁格国家公园位于南非东北部",
+     "committed_after": "克鲁格国家公园位于南非东北部，沿着莫桑比克和津巴布韦的边界延伸",
+     "added": "，沿着莫桑比克和津巴布韦的边界延伸",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Mozambique",
+       "form": "莫桑比克",
+       "spoken_end": 8.7,
+       "probe": false
+      },
+      {
+       "en": "Zimbabwe",
+       "form": "津巴布韦",
+       "spoken_end": 10.46,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1617|wrong|0",
+   "sid": "dev/1617",
+   "arm": "wrong",
+   "talk": "wikivoyage:Kruger National Park",
+   "t": "Kruger National Park",
+   "w": "克鲁格国家公园",
+   "w_wrong": "布宜诺斯艾利斯省",
+   "en": "The Kruger National Park (KNP) lies in the north-east of South Africa and runs along the border of Mozambique in the east, Zimbabwe in the north, and the southern border is the Crocodile River.",
+   "duration": 16.32,
+   "final": "克鲁格国家公园位于南非东北部，沿着莫桑比克和津巴布韦的边界延伸，南部边界是鳄鱼河。",
+   "steps": [
+    {
+     "step_end": 8.0,
+     "committed_before": "克鲁格国家公园位于南非东北部",
+     "committed_after": "克鲁格国家公园位于南非东北部，沿着莫桑比克和津巴布韦的边界延伸",
+     "added": "，沿着莫桑比克和津巴布韦的边界延伸",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Mozambique",
+       "form": "莫桑比克",
+       "spoken_end": 8.7,
+       "probe": false
+      },
+      {
+       "en": "Zimbabwe",
+       "form": "津巴布韦",
+       "spoken_end": 10.46,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1676|correct|0",
+   "sid": "test/1676",
+   "arm": "correct",
+   "talk": "wikivoyage:Kruger National Park",
+   "t": "South African National Parks",
+   "w": "南非国家公园",
+   "w_wrong": "总统委员会",
+   "en": "As with all South African National Parks, there are daily conservation and entry fees for the park.",
+   "duration": 9.42,
+   "final": "克鲁格国家公园位于南非，是非洲最大的国家公园之一。它横跨南非、莫桑比克和津巴布韦三国，总面积超过19,000平方公里。克鲁格国家公园以其丰富的野生动物和多样化的生态系统而闻名，是游客和野生动物爱好者的天堂。公园内有各种各样的动物，包括狮子、大象、犀牛、豹子和各种鸟类。克鲁格国家公园还以其美丽的自然景观和壮观的景色而闻名，如鳄鱼河和克鲁格国家公园的壮丽景色。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "克鲁格国家公园位于南非，是非洲最大的国家公园之一",
+     "added": "克鲁格国家公园位于南非，是非洲最大的国家公园之一",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Kruger National Park",
+       "form": "克鲁格国家公园",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "South Africa",
+       "form": "南非",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 8.0,
+     "committed_before": "克鲁格国家公园位于南非，是非洲最大的国家公园之一",
+     "committed_after": "克鲁格国家公园位于南非，是非洲最大的国家公园之一。它横跨南非、莫桑比克和津巴布韦三国，",
+     "added": "。它横跨南非、莫桑比克和津巴布韦三国，",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Mozambique",
+       "form": "莫桑比克",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Zimbabwe",
+       "form": "津巴布韦",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "South Africa",
+       "form": "南非",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 9.42,
+     "committed_before": "克鲁格国家公园位于南非，是非洲最大的国家公园之一。它横跨南非、莫桑比克和津巴布韦三国，总面积超过19,000平方公里。克鲁格国家公园以其丰富的野生动物和多样化的生态系统而闻名，是游客和野生动物爱好者的天堂。公园内有各种各样的动物，包括狮子、大象、犀牛、豹子和各种鸟类",
+     "committed_after": "克鲁格国家公园位于南非，是非洲最大的国家公园之一。它横跨南非、莫桑比克和津巴布韦三国，总面积超过19,000平方公里。克鲁格国家公园以其丰富的野生动物和多样化的生态系统而闻名，是游客和野生动物爱好者的天堂。公园内有各种各样的动物，包括狮子、大象、犀牛、豹子和各种鸟类。克鲁格国家公园还以其美丽的自然景观和壮观的景色而闻名，如鳄鱼河和克鲁格国家公园的壮丽景色。",
+     "added": "。克鲁格国家公园还以其美丽的自然景观和壮观的景色而闻名，如鳄鱼河和克鲁格国家公园的壮丽景色。",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Kruger National Park",
+       "form": "克鲁格国家公园",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Crocodile River",
+       "form": "鳄鱼河",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1676|wrong|0",
+   "sid": "test/1676",
+   "arm": "wrong",
+   "talk": "wikivoyage:Kruger National Park",
+   "t": "South African National Parks",
+   "w": "南非国家公园",
+   "w_wrong": "总统委员会",
+   "en": "As with all South African National Parks, there are daily conservation and entry fees for the park.",
+   "duration": 9.42,
+   "final": "克鲁格国家公园位于南非，是总统委员会管理的国家公园之一。与其他南非国家公园一样，克鲁格国家公园设有每日保护和入场费。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "克鲁格国家公园位于南非，是",
+     "added": "克鲁格国家公园位于南非，是",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Kruger National Park",
+       "form": "克鲁格国家公园",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "South Africa",
+       "form": "南非",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 8.0,
+     "committed_before": "克鲁格国家公园位于南非，是总统委员会管理的国家公园之一",
+     "committed_after": "克鲁格国家公园位于南非，是总统委员会管理的国家公园之一。与其他南非国家公园一样，克鲁格国家公园设有每日",
+     "added": "。与其他南非国家公园一样，克鲁格国家公园设有每日",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Kruger National Park",
+       "form": "克鲁格国家公园",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "South Africa",
+       "form": "南非",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1893|correct|0",
+   "sid": "test/1893",
+   "arm": "correct",
+   "talk": "wikivoyage:Sundarbans National Park",
+   "t": "Bangladeshi",
+   "w": "孟加拉国",
+   "w_wrong": "巴伐利亚",
+   "en": "The Sundarbans are the largest littoral mangrove belt in the world, stretching 80 km (50 mi) into the Bangladeshi and Indian hinterland from the coast.",
+   "duration": 10.2,
+   "final": "孟加拉国的孙德尔本斯国家公园是世界上最大的红树林沼泽带，绵延80公里（50英里），横跨孟加拉国和印度的内陆地区，从海岸线延伸至内陆。",
+   "steps": [
+    {
+     "step_end": 4.0,
+     "committed_before": "孟加拉国的",
+     "committed_after": "孟加拉国的孙德尔本斯国家公园是世界上最大的红树林沼泽",
+     "added": "孙德尔本斯国家公园是世界上最大的红树林沼泽",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Sundarbans National Park",
+       "form": "孙德尔本斯国家公园",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "mangrove swamps",
+       "form": "红树林沼泽",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1979|correct|0",
+   "sid": "test/1979",
+   "arm": "correct",
+   "talk": "wikivoyage:Falkland Islands",
+   "t": "Falklands",
+   "w": "福克兰群岛",
+   "w_wrong": "乔治国王岛",
+   "en": "The official Falklands currency is the Falkland pound (FKP) whose value is set equivalent to that of one British pound (GBP).",
+   "duration": 10.98,
+   "final": "福克兰群岛的居民使用福克兰英镑作为官方货币，其价值与英镑等同。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "福克兰群岛的居民使用福克兰英镑",
+     "added": "福克兰群岛的居民使用福克兰英镑",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Falklands",
+       "form": "福克兰群岛",
+       "spoken_end": 2.88,
+       "probe": true
+      },
+      {
+       "en": "Falkland pound",
+       "form": "福克兰英镑",
+       "spoken_end": 5.2,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1979|wrong|0",
+   "sid": "test/1979",
+   "arm": "wrong",
+   "talk": "wikivoyage:Falkland Islands",
+   "t": "Falklands",
+   "w": "福克兰群岛",
+   "w_wrong": "乔治国王岛",
+   "en": "The official Falklands currency is the Falkland pound (FKP) whose value is set equivalent to that of one British pound (GBP).",
+   "duration": 10.98,
+   "final": "福克兰英镑、美元和信用卡是斯坦利的主要货币。",
+   "steps": [
+    {
+     "step_end": 7.0,
+     "committed_before": "福克兰英镑、美元",
+     "committed_after": "福克兰英镑、美元和信用卡是斯坦利的主要货币",
+     "added": "和信用卡是斯坦利的主要货币",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Stanley",
+       "form": "斯坦利",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "credit cards",
+       "form": "信用卡",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1944|correct|0",
+   "sid": "test/1944",
+   "arm": "correct",
+   "talk": "wikivoyage:Auckland",
+   "t": "shops",
+   "w": "商店",
+   "w_wrong": "酒水",
+   "en": "These are sometimes-crowded family beaches with a good range of shops lining the shore. Swimming is safe.",
+   "duration": 10.5,
+   "final": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色。塔马基大道连接着怀特玛塔港和米森湾。圣赫里尔斯是奥克兰中部的一个地区，那里有各种各样的商店。游泳是安全的。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "added": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Auckland",
+       "form": "奥克兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "two harbours",
+       "form": "两个港口",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Shore beaches",
+       "form": "北岸海滩",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Harbour district",
+       "form": "北港区内",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Pacific Ocean",
+       "form": "太平洋上",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Devonport",
+       "form": "德文波特",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "pohutukawa trees",
+       "form": "新西兰圣诞树",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 6.0,
+     "committed_before": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色。塔马基大道",
+     "committed_after": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色。塔马基大道连接着怀特玛塔港和米森湾。圣赫里尔斯是奥克兰中部的一个地区，那里有",
+     "added": "连接着怀特玛塔港和米森湾。圣赫里尔斯是奥克兰中部的一个地区，那里有",
+     "n_terms": 5,
+     "terms": [
+      {
+       "en": "Auckland",
+       "form": "奥克兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Waitemata Harbour",
+       "form": "怀特玛塔港",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Mission Bay",
+       "form": "米森湾",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "St Heliers",
+       "form": "圣赫里尔斯",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Central Auckland",
+       "form": "奥克兰中部",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1944|irrelevant|0",
+   "sid": "test/1944",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Auckland",
+   "t": "shops",
+   "w": "商店",
+   "w_wrong": "酒水",
+   "en": "These are sometimes-crowded family beaches with a good range of shops lining the shore. Swimming is safe.",
+   "duration": 10.5,
+   "final": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色。塔马基大道连接着怀特玛塔港和米森湾。圣赫里尔斯是奥克兰中部的一个地区。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "added": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Auckland",
+       "form": "奥克兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "two harbours",
+       "form": "两个港口",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Shore beaches",
+       "form": "北岸海滩",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Harbour district",
+       "form": "北港区内",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Pacific Ocean",
+       "form": "太平洋上",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Devonport",
+       "form": "德文波特",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "pohutukawa trees",
+       "form": "新西兰圣诞树",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 4.0,
+     "committed_before": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "committed_after": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色。塔马基大道连接着怀特玛塔港和米森湾。圣赫里尔斯是奥克兰中部的一个地区",
+     "added": "。塔马基大道连接着怀特玛塔港和米森湾。圣赫里尔斯是奥克兰中部的一个地区",
+     "n_terms": 6,
+     "terms": [
+      {
+       "en": "Auckland",
+       "form": "奥克兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Tamaki Drive",
+       "form": "塔马基大道",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Waitemata Harbour",
+       "form": "怀特玛塔港",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Mission Bay",
+       "form": "米森湾",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "St Heliers",
+       "form": "圣赫里尔斯",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Central Auckland",
+       "form": "奥克兰中部",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1944|wrong|0",
+   "sid": "test/1944",
+   "arm": "wrong",
+   "talk": "wikivoyage:Auckland",
+   "t": "shops",
+   "w": "商店",
+   "w_wrong": "酒水",
+   "en": "These are sometimes-crowded family beaches with a good range of shops lining the shore. Swimming is safe.",
+   "duration": 10.5,
+   "final": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色。塔马基大道和怀特玛塔港是重要的地标。米森湾和圣赫里尔斯是受欢迎的旅游地点。奥克兰中部有众多商店沿岸而建，游泳安全。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "added": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "n_terms": 7,
+     "terms": [
+      {
+       "en": "Auckland",
+       "form": "奥克兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "two harbours",
+       "form": "两个港口",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Shore beaches",
+       "form": "北岸海滩",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "North Harbour district",
+       "form": "北港区内",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Pacific Ocean",
+       "form": "太平洋上",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Devonport",
+       "form": "德文波特",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "pohutukawa trees",
+       "form": "新西兰圣诞树",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 5.0,
+     "committed_before": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色",
+     "committed_after": "奥克兰有两个港口，北岸海滩位于北港区内，太平洋上。长湾和德文波特是两个著名的海滩。新西兰圣诞树是这里的特色。塔马基大道和怀特玛塔港是重要的地标。米森湾和圣赫里尔斯是受欢迎的旅游地点。奥克兰中部有众多商店",
+     "added": "。塔马基大道和怀特玛塔港是重要的地标。米森湾和圣赫里尔斯是受欢迎的旅游地点。奥克兰中部有众多商店",
+     "n_terms": 6,
+     "terms": [
+      {
+       "en": "Auckland",
+       "form": "奥克兰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Tamaki Drive",
+       "form": "塔马基大道",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Waitemata Harbour",
+       "form": "怀特玛塔港",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Mission Bay",
+       "form": "米森湾",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "St Heliers",
+       "form": "圣赫里尔斯",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Central Auckland",
+       "form": "奥克兰中部",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1992|irrelevant|0",
+   "sid": "test/1992",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Safaris",
+   "t": "safari",
+   "w": "游猎",
+   "w_wrong": "七姊妹",
+   "en": "The term safari in popular use refers to overland travel to view the stunning African wildlife, particularly on savanna.",
+   "duration": 9.5,
+   "final": "在流行用语中，\"safari\"一词指的是前往非洲草原观赏壮观的野生动物的陆地旅行，特别是观赏大象、长颈鹿、猎豹、花豹等动物。",
+   "steps": [
+    {
+     "step_end": 9.5,
+     "committed_before": "在流行用语中，\"safari\"一词指的是前往非洲草原观赏壮观的野生动物的陆地旅行，特别是",
+     "committed_after": "在流行用语中，\"safari\"一词指的是前往非洲草原观赏壮观的野生动物的陆地旅行，特别是观赏大象、长颈鹿、猎豹、花豹等动物。",
+     "added": "观赏大象、长颈鹿、猎豹、花豹等动物。",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "elephants",
+       "form": "大象",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "giraffes",
+       "form": "长颈鹿",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "cheetahs",
+       "form": "猎豹",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "leopards",
+       "form": "花豹",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1946|irrelevant|0",
+   "sid": "test/1946",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Tokyo 2020",
+   "t": "Olympics",
+   "w": "奥运会",
+   "w_wrong": "二战",
+   "en": "Cancellation policies vary, but as of late March most coronavirus-based cancellation policies don't extend to July 2020, when the Olympics had been scheduled.",
+   "duration": 9.3,
+   "final": "取消政策各不相同，但截至3月底，大多数基于冠状病毒的取消政策并不涵盖2020年7月的夏季奥运会，那时原定于东京举行的夏季奥运会。",
+   "steps": [
+    {
+     "step_end": 9.3,
+     "committed_before": "取消政策各不相同，但截至3月底，大多数基于冠状病毒的取消政策并不涵盖2020年7月的夏季奥运会",
+     "committed_after": "取消政策各不相同，但截至3月底，大多数基于冠状病毒的取消政策并不涵盖2020年7月的夏季奥运会，那时原定于东京举行的夏季奥运会。",
+     "added": "，那时原定于东京举行的夏季奥运会。",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Tokyo",
+       "form": "东京",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "summer Olympics",
+       "form": "夏季奥运会",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1829|correct|0",
+   "sid": "test/1829",
+   "arm": "correct",
+   "talk": "wikivoyage:Duty free shopping",
+   "t": "countries with heavy taxation",
+   "w": "课征重税的国家/地区",
+   "w_wrong": "厄瓜多尔加拉帕戈斯群岛",
+   "en": "Travellers bound for countries with heavy taxation can sometimes save a considerable amount of money, especially on products such as alcoholic beverages and tobacco.",
+   "duration": 10.38,
+   "final": "前往课征重税国家/地区的旅客有时可以节省一大笔钱，特别是在购买酒水和烟草等产品时。",
+   "steps": [
+    {
+     "step_end": 8.0,
+     "committed_before": "前往课征重税国家/地区的旅客有时可以节省一大笔钱",
+     "committed_after": "前往课征重税国家/地区的旅客有时可以节省一大笔钱，特别是在购买酒水和烟草等",
+     "added": "，特别是在购买酒水和烟草等",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "alcoholic beverages",
+       "form": "酒水",
+       "spoken_end": 8.02,
+       "probe": false
+      },
+      {
+       "en": "tobacco",
+       "form": "烟草",
+       "spoken_end": 8.6,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1829|irrelevant|0",
+   "sid": "test/1829",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Duty free shopping",
+   "t": "countries with heavy taxation",
+   "w": "课征重税的国家/地区",
+   "w_wrong": "厄瓜多尔加拉帕戈斯群岛",
+   "en": "Travellers bound for countries with heavy taxation can sometimes save a considerable amount of money, especially on products such as alcoholic beverages and tobacco.",
+   "duration": 10.38,
+   "final": "前往高税收国家的旅客有时可以节省一大笔钱，特别是在购买酒水和烟草等产品时。",
+   "steps": [
+    {
+     "step_end": 8.0,
+     "committed_before": "前往高税收国家的旅客有时可以节省一大笔钱",
+     "committed_after": "前往高税收国家的旅客有时可以节省一大笔钱，特别是在购买酒水和烟草等",
+     "added": "，特别是在购买酒水和烟草等",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "alcoholic beverages",
+       "form": "酒水",
+       "spoken_end": 8.02,
+       "probe": false
+      },
+      {
+       "en": "tobacco",
+       "form": "烟草",
+       "spoken_end": 8.6,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1829|wrong|0",
+   "sid": "test/1829",
+   "arm": "wrong",
+   "talk": "wikivoyage:Duty free shopping",
+   "t": "countries with heavy taxation",
+   "w": "课征重税的国家/地区",
+   "w_wrong": "厄瓜多尔加拉帕戈斯群岛",
+   "en": "Travellers bound for countries with heavy taxation can sometimes save a considerable amount of money, especially on products such as alcoholic beverages and tobacco.",
+   "duration": 10.38,
+   "final": "前往厄瓜多尔加拉帕戈斯群岛等重税国家的旅客有时可以节省一大笔钱，特别是在购买酒水和烟草等产品时。",
+   "steps": [
+    {
+     "step_end": 8.0,
+     "committed_before": "前往厄瓜多尔加拉帕戈斯群岛等重税国家的旅客有时可以节省一大笔钱",
+     "committed_after": "前往厄瓜多尔加拉帕戈斯群岛等重税国家的旅客有时可以节省一大笔钱，特别是在购买酒水和烟草等",
+     "added": "，特别是在购买酒水和烟草等",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "alcoholic beverages",
+       "form": "酒水",
+       "spoken_end": 8.02,
+       "probe": false
+      },
+      {
+       "en": "tobacco",
+       "form": "烟草",
+       "spoken_end": 8.6,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1613|correct|0",
+   "sid": "dev/1613",
+   "arm": "correct",
+   "talk": "wikivoyage:Horse riding",
+   "t": "saddles",
+   "w": "马鞍",
+   "w_wrong": "念语",
+   "en": "Next, some saddles, particularly English saddles, have safety bars that allow a stirrup leather to fall off the saddle if pulled backwards by a falling rider.",
+   "duration": 9.36,
+   "final": "接下来，一些马鞍，特别是英式马鞍，有安全扣，允许马镫皮带从马鞍上脱落，如果骑手在跌落时被马镫皮带拉向后方。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "接下来，",
+     "committed_after": "接下来，一些马鞍，特别是英式马鞍",
+     "added": "一些马鞍，特别是英式马鞍",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "horse",
+       "form": "马",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "English saddles",
+       "form": "英式马鞍",
+       "spoken_end": 3.02,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1613|irrelevant|0",
+   "sid": "dev/1613",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Horse riding",
+   "t": "saddles",
+   "w": "马鞍",
+   "w_wrong": "念语",
+   "en": "Next, some saddles, particularly English saddles, have safety bars that allow a stirrup leather to fall off the saddle if pulled backwards by a falling rider.",
+   "duration": 9.36,
+   "final": "接下来，一些马鞍，特别是英式马鞍，有安全扣，允许马镫皮带从马鞍上脱落，如果骑手在跌落时被马镫皮带拉向后方。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "接下来，",
+     "committed_after": "接下来，一些马鞍，特别是英式马鞍",
+     "added": "一些马鞍，特别是英式马鞍",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "horse",
+       "form": "马",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "English saddles",
+       "form": "英式马鞍",
+       "spoken_end": 3.02,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1663|irrelevant|0",
+   "sid": "test/1663",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Rock climbing",
+   "t": "Cochamó Valley",
+   "w": "科茶莫山谷",
+   "w_wrong": "梵蒂冈城",
+   "en": "Cochamó Valley - Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "duration": 12.12,
+   "final": "乔科莫山谷，智利的顶级攀岩目的地，被称为南美洲的优胜美地，拥有各种花岗岩大石壁和峭壁，以及众多山峰。",
+   "steps": [
+    {
+     "step_end": 9.0,
+     "committed_before": "乔科莫山谷，智利的顶级攀岩目的地，被称为南",
+     "committed_after": "乔科莫山谷，智利的顶级攀岩目的地，被称为南美洲的优胜美地，拥有各种花岗岩大石壁和峭壁，以及众多山峰",
+     "added": "美洲的优胜美地，拥有各种花岗岩大石壁和峭壁，以及众多山峰",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "granite big walls and crags",
+       "form": "花岗岩大石壁和峭壁",
+       "spoken_end": 10.04,
+       "probe": false
+      },
+      {
+       "en": "Summits",
+       "form": "山峰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "peaks",
+       "form": "山峰",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1663|wrong|0",
+   "sid": "test/1663",
+   "arm": "wrong",
+   "talk": "wikivoyage:Rock climbing",
+   "t": "Cochamó Valley",
+   "w": "科茶莫山谷",
+   "w_wrong": "梵蒂冈城",
+   "en": "Cochamó Valley - Chile's premier climbing destination, known as the Yosemite of South America, with a variety of granite big walls and crags.",
+   "duration": 12.12,
+   "final": "科恰莫山谷，智利的顶级攀岩目的地，被誉为南美洲的优胜美地，拥有各种花岗岩大石壁和峭壁，以及众多山峰。",
+   "steps": [
+    {
+     "step_end": 9.0,
+     "committed_before": "科恰莫山谷，智利的顶级攀岩目的地，被誉为南美洲的优胜美地",
+     "committed_after": "科恰莫山谷，智利的顶级攀岩目的地，被誉为南美洲的优胜美地，拥有各种花岗岩大石壁和峭壁，以及众多山峰",
+     "added": "，拥有各种花岗岩大石壁和峭壁，以及众多山峰",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "granite big walls and crags",
+       "form": "花岗岩大石壁和峭壁",
+       "spoken_end": 10.04,
+       "probe": false
+      },
+      {
+       "en": "Summits",
+       "form": "山峰",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "peaks",
+       "form": "山峰",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1628|wrong|0",
+   "sid": "dev/1628",
+   "arm": "wrong",
+   "talk": "wikivoyage:Art and antiques shopping",
+   "t": "Handicraft products",
+   "w": "手工艺品",
+   "w_wrong": "上颚上",
+   "en": "Handicraft products might be defined as antiques, though they are younger than similar mass-produced goods.",
+   "duration": 11.16,
+   "final": "古董在北美洲已经存在了100年，它们是上颚上的手工艺品，而不是批量生产的同类产品。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "古董在北美洲已经存在了100年，它们是上颚上的手工艺品，而不是批量生产的同类产品",
+     "added": "古董在北美洲已经存在了100年，它们是上颚上的手工艺品，而不是批量生产的同类产品",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "antiques",
+       "form": "古董",
+       "spoken_end": 4.98,
+       "probe": false
+      },
+      {
+       "en": "North America",
+       "form": "北美洲",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Handicraft products",
+       "form": "上颚上",
+       "spoken_end": 2.9,
+       "probe": true
+      },
+      {
+       "en": "mass-produced goods",
+       "form": "批量生产的同类产品",
+       "spoken_end": 8.26,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1828|wrong|0",
+   "sid": "test/1828",
+   "arm": "wrong",
+   "talk": "wikivoyage:War zone safety",
+   "t": "Hostile environment course",
+   "w": "应对敌对环境课程",
+   "w_wrong": "金字塔的声光表演",
+   "en": "A search of the Internet for 'Hostile environment course' will probably provide the address of a local company.",
+   "duration": 9.54,
+   "final": "在敌对环境课程中，我们学习了如何在金字塔的声光表演中生存，如何在战区中生存，以及如何在野外生存。",
+   "steps": [
+    {
+     "step_end": 8.0,
+     "committed_before": "在敌对环境课程中，我们学习了如何在金字塔的声光表演中生存，如何在",
+     "committed_after": "在敌对环境课程中，我们学习了如何在金字塔的声光表演中生存，如何在战区中生存，以及如何在野外生存",
+     "added": "战区中生存，以及如何在野外生存",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "wilderness survival",
+       "form": "野外生存",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "war zones",
+       "form": "战区",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1717|correct|0",
+   "sid": "test/1717",
+   "arm": "correct",
+   "talk": "wikivoyage:Water safety",
+   "t": "underwater topology",
+   "w": "水下的地形",
+   "w_wrong": "签证申请",
+   "en": "Due to the underwater topology the return flow is concentrated at a few deeper sections, and a fast current to deep water may form there.",
+   "duration": 10.92,
+   "final": "由于水下地形的原因，离岸流在较深的区域形成了急流，海浪从海滩快速回流到海中。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "",
+     "committed_after": "由于水下地形的原因，离岸流在较深的区域形成了急流",
+     "added": "由于水下地形的原因，离岸流在较深的区域形成了急流",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Rip currents",
+       "form": "离岸流",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "deeper sections",
+       "form": "较深的区域",
+       "spoken_end": 6.46,
+       "probe": false
+      },
+      {
+       "en": "fast current",
+       "form": "急流",
+       "spoken_end": 7.68,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1758|correct|0",
+   "sid": "test/1758",
+   "arm": "correct",
+   "talk": "wikivoyage:Antarctic Islands",
+   "t": "archipelago",
+   "w": "群岛",
+   "w_wrong": "修道院",
+   "en": "The archipelago lies 120 km north of the Peninsula. The largest is King George Island with the settlement of Villa Las Estrellas.",
+   "duration": 9.0,
+   "final": "南设得兰群岛位于乔治国王岛、利文斯顿岛和欺骗岛等岛屿组成的群岛中，距离乔治国王岛120公里。其中乔治国王岛是最大的岛屿，岛上有一个名为Villa Las Estrellas的定居点。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "南设得兰群岛",
+     "committed_after": "南设得兰群岛位于乔治国王岛、利文斯顿岛和欺骗岛等岛屿组成的群岛中",
+     "added": "位于乔治国王岛、利文斯顿岛和欺骗岛等岛屿组成的群岛中",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "King George Island",
+       "form": "乔治国王岛",
+       "spoken_end": 6.12,
+       "probe": false
+      },
+      {
+       "en": "Livingston Island",
+       "form": "利文斯顿岛",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Deception",
+       "form": "欺骗岛",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1758|wrong|0",
+   "sid": "test/1758",
+   "arm": "wrong",
+   "talk": "wikivoyage:Antarctic Islands",
+   "t": "archipelago",
+   "w": "群岛",
+   "w_wrong": "修道院",
+   "en": "The archipelago lies 120 km north of the Peninsula. The largest is King George Island with the settlement of Villa Las Estrellas.",
+   "duration": 9.0,
+   "final": "南设得兰群岛位于乔治国王岛、利文斯顿岛和欺骗岛的东南方向，距离乔治国王岛120公里。最大的岛屿是乔治国王岛，上面有一个名为Villa Las Estrellas的定居点。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "南设得兰群岛",
+     "committed_after": "南设得兰群岛位于乔治国王岛、利文斯顿岛和欺骗岛的东南",
+     "added": "位于乔治国王岛、利文斯顿岛和欺骗岛的东南",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "King George Island",
+       "form": "乔治国王岛",
+       "spoken_end": 6.12,
+       "probe": false
+      },
+      {
+       "en": "Livingston Island",
+       "form": "利文斯顿岛",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Deception",
+       "form": "欺骗岛",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1519|correct|0",
+   "sid": "dev/1519",
+   "arm": "correct",
+   "talk": "wikivoyage:Gap year travel",
+   "t": "gap-year course",
+   "w": "间隔年课程",
+   "w_wrong": "拜占庭市场",
+   "en": "In many cases, enrolling on a gap-year course abroad can actually improve your chances of moving into higher education back in your home country.",
+   "duration": 13.18,
+   "final": "间隔年课程的学费是多少？",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "间隔年课程的学费是多少",
+     "added": "间隔年课程的学费是多少",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "gap-year course",
+       "form": "间隔年课程",
+       "spoken_end": 5.1,
+       "probe": true
+      },
+      {
+       "en": "tuition fee",
+       "form": "学费",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1541|correct|0",
+   "sid": "dev/1541",
+   "arm": "correct",
+   "talk": "wikivoyage:Air courier",
+   "t": "Courier companies",
+   "w": "快递公司",
+   "w_wrong": "南方姐妹队",
+   "en": "Courier companies are well paid for delivering things quickly. Frequently, time is very important with business documents, merchandise or spare parts for an urgent repair.",
+   "duration": 13.08,
+   "final": "快递公司正在处理商务文件、商品、零部件和紧急维修的零部件，这些物品需要快速、频繁地交付。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "快递公司正在处理商务文件",
+     "added": "快递公司正在处理商务文件",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Courier companies",
+       "form": "快递公司",
+       "spoken_end": 2.16,
+       "probe": true
+      },
+      {
+       "en": "business documents",
+       "form": "商务文件",
+       "spoken_end": 7.58,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1555|correct|0",
+   "sid": "dev/1555",
+   "arm": "correct",
+   "talk": "wikivoyage:Streymoy",
+   "t": "churchyard",
+   "w": "教堂墓地",
+   "w_wrong": "意大利",
+   "en": "In the churchyard, there are interesting marble sculptures of doves over some tombs.",
+   "duration": 9.54,
+   "final": "在哈尔达斯维克村的教堂墓地里，有一座八角形教堂，周围是鸽子和坟墓，这个村庄非常迷人。",
+   "steps": [
+    {
+     "step_end": 3.0,
+     "committed_before": "",
+     "committed_after": "在哈尔达斯维克村的教堂墓地里，有一座八角形教堂，周围是鸽子和坟墓，这个村庄非常迷人",
+     "added": "在哈尔达斯维克村的教堂墓地里，有一座八角形教堂，周围是鸽子和坟墓，这个村庄非常迷人",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "Haldarsvík",
+       "form": "哈尔达斯维克村",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "octagonal church",
+       "form": "八角形教堂",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "doves",
+       "form": "鸽子",
+       "spoken_end": 7.22,
+       "probe": false
+      },
+      {
+       "en": "tombs",
+       "form": "坟墓",
+       "spoken_end": 8.46,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": true,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": true
+  },
+  {
+   "key": "test/1950|wrong|0",
+   "sid": "test/1950",
+   "arm": "wrong",
+   "talk": "wikivoyage:Cascais",
+   "t": "Sintra",
+   "w": "辛特拉",
+   "w_wrong": "大西洋",
+   "en": "To the north and within easy reach is the romantic and fascinating town of Sintra and which was made famous to foreigners after a glowing account of its splendours recorded by Lord Byron.",
+   "duration": 12.48,
+   "final": "向北，就在不远处，是罗卡角，拜伦勋爵称之为“大西洋的尽头”，它以法蒂玛圣母院而闻名于世。",
+   "steps": [
+    {
+     "step_end": 4.0,
+     "committed_before": "向北，就在不远处，是",
+     "committed_after": "向北，就在不远处，是罗卡角，拜伦勋爵称之为",
+     "added": "罗卡角，拜伦勋爵称之为",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Lord Byron",
+       "form": "拜伦勋爵",
+       "spoken_end": 10.14,
+       "probe": false
+      },
+      {
+       "en": "Cabo da Roca",
+       "form": "罗卡角",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1516|correct|0",
+   "sid": "dev/1516",
+   "arm": "correct",
+   "talk": "wikivoyage:Auschwitz-Birkenau",
+   "t": "Holocaust",
+   "w": "大屠杀",
+   "w_wrong": "宴会",
+   "en": "Please treat the site with all of the dignity, solemnity and respect it deserves. Do not make jokes about the Holocaust or Nazis.",
+   "duration": 12.12,
+   "final": "在大屠杀期间，纳粹对犹太人和非犹太人都进行了屠杀。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "在大屠杀期间，纳粹",
+     "added": "在大屠杀期间，纳粹",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Holocaust",
+       "form": "大屠杀",
+       "spoken_end": 9.88,
+       "probe": true
+      },
+      {
+       "en": "Nazis",
+       "form": "纳粹",
+       "spoken_end": 10.64,
+       "probe": false
+      }
+     ],
+     "probe_among": true,
+     "probe_form_added": true,
+     "survives": true
+    },
+    {
+     "step_end": 5.0,
+     "committed_before": "在大屠杀期间，纳粹",
+     "committed_after": "在大屠杀期间，纳粹对犹太人和非犹太人都进行了屠杀",
+     "added": "对犹太人和非犹太人都进行了屠杀",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Jews",
+       "form": "犹太人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "non-Jews",
+       "form": "非犹太人",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": true,
+   "probe_form_added": true
+  },
+  {
+   "key": "dev/1516|irrelevant|0",
+   "sid": "dev/1516",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Auschwitz-Birkenau",
+   "t": "Holocaust",
+   "w": "大屠杀",
+   "w_wrong": "宴会",
+   "en": "Please treat the site with all of the dignity, solemnity and respect it deserves. Do not make jokes about the Holocaust or Nazis.",
+   "duration": 12.12,
+   "final": "在这些巨大的万人坑遗址中，男女、犹太人和非犹太人都被埋葬在一起。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "在这些巨大的万人坑遗址中，男女、犹太人和非犹太人都被埋葬在一起",
+     "added": "在这些巨大的万人坑遗址中，男女、犹太人和非犹太人都被埋葬在一起",
+     "n_terms": 4,
+     "terms": [
+      {
+       "en": "mass grave site",
+       "form": "巨大的万人坑遗址",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "men and women",
+       "form": "男女",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Jews",
+       "form": "犹太人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "non-Jews",
+       "form": "非犹太人",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "dev/1516|wrong|0",
+   "sid": "dev/1516",
+   "arm": "wrong",
+   "talk": "wikivoyage:Auschwitz-Birkenau",
+   "t": "Holocaust",
+   "w": "大屠杀",
+   "w_wrong": "宴会",
+   "en": "Please treat the site with all of the dignity, solemnity and respect it deserves. Do not make jokes about the Holocaust or Nazis.",
+   "duration": 12.12,
+   "final": "在巨大的万人坑遗址，男女、犹太人和非犹太人都被纳粹杀害。请以它应得的尊严、庄重和尊重对待这个遗址。不要拿大屠杀或纳粹开玩笑。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "在巨大的万人坑遗址，男女、犹太人和非犹太",
+     "added": "在巨大的万人坑遗址，男女、犹太人和非犹太",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "mass grave site",
+       "form": "巨大的万人坑遗址",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "men and women",
+       "form": "男女",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Jews",
+       "form": "犹太人",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 4.0,
+     "committed_before": "在巨大的万人坑遗址，男女、犹太人和非犹太",
+     "committed_after": "在巨大的万人坑遗址，男女、犹太人和非犹太人都被纳粹杀害",
+     "added": "人都被纳粹杀害",
+     "n_terms": 3,
+     "terms": [
+      {
+       "en": "Jews",
+       "form": "犹太人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "non-Jews",
+       "form": "非犹太人",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Nazis",
+       "form": "纳粹",
+       "spoken_end": 10.64,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1922|correct|0",
+   "sid": "test/1922",
+   "arm": "correct",
+   "talk": "wikivoyage:Easter travel",
+   "t": "Christian theological explanations",
+   "w": "基督教神学的解释",
+   "w_wrong": "文化的足迹萦绕留存",
+   "en": "There are of course Christian theological explanations for this tradition, but it may well be a pre-Christian Spring and Fertility ritual.",
+   "duration": 9.36,
+   "final": "复活节的起源可以追溯到基督教神学的解释，但它可能是一个庆祝春天、祈求丰收的仪式。复活节守夜活动通常在周六晚上举行，而复活节周末则标志着基督的复活。",
+   "steps": [
+    {
+     "step_end": 6.0,
+     "committed_before": "复活节的起源可以追溯到基督教神学的解释，",
+     "committed_after": "复活节的起源可以追溯到基督教神学的解释，但它可能是一个庆祝春天、祈求丰收的仪式。复活节守夜活动通常在周六晚上举行，而复活节周末则",
+     "added": "但它可能是一个庆祝春天、祈求丰收的仪式。复活节守夜活动通常在周六晚上举行，而复活节周末则",
+     "n_terms": 5,
+     "terms": [
+      {
+       "en": "Easter",
+       "form": "复活节",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Spring and Fertility ritual",
+       "form": "庆祝春天、祈求丰收的仪式",
+       "spoken_end": 8.64,
+       "probe": false
+      },
+      {
+       "en": "Easter Vigil",
+       "form": "复活节守夜活动",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Saturday night",
+       "form": "周六晚上",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Easter weekend",
+       "form": "复活节周末",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  },
+  {
+   "key": "test/1922|irrelevant|0",
+   "sid": "test/1922",
+   "arm": "irrelevant",
+   "talk": "wikivoyage:Easter travel",
+   "t": "Christian theological explanations",
+   "w": "基督教神学的解释",
+   "w_wrong": "文化的足迹萦绕留存",
+   "en": "There are of course Christian theological explanations for this tradition, but it may well be a pre-Christian Spring and Fertility ritual.",
+   "duration": 9.36,
+   "final": "复活节周末的周六晚上，人们聚集在教堂里进行复活节守夜活动。",
+   "steps": [
+    {
+     "step_end": 2.0,
+     "committed_before": "",
+     "committed_after": "复活节周末的周六晚上，人们聚集",
+     "added": "复活节周末的周六晚上，人们聚集",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Saturday night",
+       "form": "周六晚上",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Easter weekend",
+       "form": "复活节周末",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    },
+    {
+     "step_end": 4.0,
+     "committed_before": "复活节周末的周六晚上，人们聚集在教堂里",
+     "committed_after": "复活节周末的周六晚上，人们聚集在教堂里进行复活节守夜活动",
+     "added": "进行复活节守夜活动",
+     "n_terms": 2,
+     "terms": [
+      {
+       "en": "Easter",
+       "form": "复活节",
+       "spoken_end": null,
+       "probe": false
+      },
+      {
+       "en": "Easter Vigil",
+       "form": "复活节守夜活动",
+       "spoken_end": null,
+       "probe": false
+      }
+     ],
+     "probe_among": false,
+     "probe_form_added": false,
+     "survives": true
+    }
+   ],
+   "probe_among": false,
+   "probe_form_added": false
+  }
+ ]
+}
