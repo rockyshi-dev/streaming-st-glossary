@@ -250,7 +250,8 @@ python3 -m fleurs.early_probe --stream runs/fleurs/stream.jsonl --align runs/fle
 
 The term extraction is greedy decoding on vLLM, and it is not bit-reproducible: a second run on the same GPU type,
 model revision and vLLM version gave a different term list on 64 of the 820 lines, so it builds a different set of
-items. To decode exactly the published items, start from the published terms; `items` then rebuilds
+items. That run kept 229 items and found 43, 32 and 39 examples in the correct, wrong and irrelevant arms (against 42,
+37 and 32 here); 46 wrong-arm outputs contained w', 8 of them committed before the term was spoken. To decode exactly the published items, start from the published terms; `items` then rebuilds
 `data/fleurs/sentences.jsonl` byte for byte and the terms stage is skipped:
 
 ```bash
